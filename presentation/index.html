@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1">
+    <title>PFE Presentation - Versigent IT Infrastructure Management Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slide" id="slide-1">
+        <div class="bg-curves"></div>
+        <div class="content-grid">
+            <div class="left-content">
+                <h1 class="main-title">Versigent <span class="highlight">IT Infrastructure</span><br>Management Platform</h1>
+                
+                <div class="section">
+                    <h2 class="section-title">Team <span class="underline">Members</span></h2>
+                    <ul class="bullet-list">
+                        <li>1- Issam (Project Lead & Full-Stack Developer)</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Project <span class="underline">Summary</span></h2>
+                    <p class="description">Design and develop a centralized IT infrastructure management platform that provides real-time monitoring, automated compliance enforcement, vulnerability detection, and remote asset management across enterprise workstations via a lightweight desktop agent and modern web dashboard.</p>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Challenges <span class="underline">Identified</span></h2>
+                    <ul class="bullet-list">
+                        <li>1- No centralized visibility over PC inventory, software, and network topology across VLANs,</li>
+                        <li>2- Manual compliance checks for mandatory security software (CrowdStrike, Tanium, McAfee),</li>
+                        <li>3- No automated CVE vulnerability detection against installed software versions,</li>
+                        <li>4- Inability to remotely manage, block, or audit workstations without physical access,</li>
+                        <li>5- No VLAN/switch port discovery — network mapping was manual and error-prone</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Team <span class="underline">Achievements</span></h2>
+                    <ul class="bullet-list">
+                        <li>1- Built a 3-tier architecture: Electron Agent → MSSQL → React Dashboard,</li>
+                        <li>2- Automated real-time PC inventory with heartbeat & installed apps tracking,</li>
+                        <li>3- Implemented CDP/LLDP VLAN discovery using native C# packet sniffer,</li>
+                        <li>4- Created a compliance engine with customizable rules & exception management,</li>
+                        <li>5- Integrated NVD CVE auto-sync for proactive vulnerability scanning</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Benefits for the <span class="underline">Company</span></h2>
+                    <ul class="bullet-list green-bullets">
+                        <li>1- <span class="green-text">100% automated</span> inventory — zero manual data entry</li>
+                        <li>2- Compliance violations detected in <span class="green-text">real-time</span> across 500+ machines</li>
+                        <li>3- Reduced IT audit preparation time by <span class="green-text">80%</span></li>
+                        <li>4- Full facility layout visualization with live device status</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right-content">
+                <div class="image-showcase">
+                    <div class="image-label top-label">Web Dashboard</div>
+                    <div class="image-frame red-border">
+                        <img src="dashboard.png" alt="Web Dashboard">
+                    </div>
+                </div>
+                <div class="image-showcase">
+                    <div class="image-label bottom-label">Desktop Agent</div>
+                    <div class="image-frame green-border">
+                        <img src="agent.png" alt="VersAgent">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tech-stack-bar">
+            <div class="tech-tag">React</div>
+            <div class="tech-tag">TypeScript</div>
+            <div class="tech-tag">Express.js</div>
+            <div class="tech-tag">Electron</div>
+            <div class="tech-tag">MSSQL</div>
+            <div class="tech-tag">Koffi (Win32)</div>
+            <div class="tech-tag">NVD API</div>
+            <div class="tech-tag">CDP/LLDP</div>
+        </div>
+
+        <div class="logo-area">
+            <div class="versigent-logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="#ff6b00" stroke-width="1.5" fill="none"/>
+                    <path d="M12 6L6 9V15L12 18L18 15V9L12 6Z" fill="#ff6b00" opacity="0.3"/>
+                </svg>
+                <span>Versigent</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

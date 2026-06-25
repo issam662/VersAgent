@@ -1,0 +1,47 @@
+# Dependencies
+# Agent build outputs & Electron releases
+agent/release*/
+agent/builder-cache/
+agent/dist/
+agent/out/
+
+# Client/Server build outputs
+node_modules/
+client/node_modules/
+server/node_modules/
+agent/node_modules/
+
+# Build outputs
+client/dist/
+server/dist/
+agent/dist/
+
+# Logs
+*.log
+agent.log
+client.log
+server.log
+
+# Environment files
+.env
+.env.local
+.env.*.local
+server/.env
+agent/.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# Temp/debug files
+temp_*/
+cdp_debug.txt
+inventory_debug.txt
+iis_status.txt
+
+# Gemini AI workspace
+.gemini/

@@ -1,0 +1,21 @@
+02:48:02.600 DEBUG: C# CDP/LLDP Sniffer started v4
+02:48:05.564 DEBUG: Found interface: \Device\NPF_{562CB8ED-F698-42F7-83D5-59173BAEF342} (WAN Miniport (Network Monitor))
+02:48:05.564 DEBUG: Found interface: \Device\NPF_{0152BC48-A9E3-4712-833B-5EB943A1E3A6} (WAN Miniport (IPv6))
+02:48:05.565 DEBUG: Found interface: \Device\NPF_{3C8EB28F-8939-4666-AB1A-44EB7B26D371} (WAN Miniport (IP))
+02:48:05.566 DEBUG: Found interface: \Device\NPF_{66D46404-4FC8-4407-9920-82B6996E5F67} (Realtek PCIe GbE Family Controller)
+02:48:05.569 DEBUG: Found interface: \Device\NPF_Loopback (Adapter for loopback traffic capture)
+02:48:05.569 DEBUG: Starting sniffer threads on 5 interfaces
+02:48:05.572 DEBUG: Sniffing thread entry for \Device\NPF_{562CB8ED-F698-42F7-83D5-59173BAEF342}
+02:48:05.573 DEBUG: Sniffing thread entry for \Device\NPF_{66D46404-4FC8-4407-9920-82B6996E5F67}
+02:48:05.573 DEBUG: Sniffing thread entry for \Device\NPF_Loopback
+02:48:05.574 DEBUG: Sniffing thread entry for \Device\NPF_{3C8EB28F-8939-4666-AB1A-44EB7B26D371}
+02:48:05.577 DEBUG: Device opened successfully: \Device\NPF_{66D46404-4FC8-4407-9920-82B6996E5F67}
+02:48:05.579 DEBUG: Device opened successfully: \Device\NPF_{562CB8ED-F698-42F7-83D5-59173BAEF342}
+02:48:05.581 DEBUG: Device opened successfully: \Device\NPF_Loopback
+02:48:05.582 DEBUG: Sniffing thread entry for \Device\NPF_{0152BC48-A9E3-4712-833B-5EB943A1E3A6}
+02:48:05.583 DEBUG: Device opened successfully: \Device\NPF_{3C8EB28F-8939-4666-AB1A-44EB7B26D371}
+02:48:05.585 DEBUG: Device opened successfully: \Device\NPF_{0152BC48-A9E3-4712-833B-5EB943A1E3A6}
+02:48:08.272 DEBUG: [CDP] Packet seen on \Device\NPF_{66D46404-4FC8-4407-9920-82B6996E5F67}
+02:48:08.273 DEBUG: [CDP] Extracted VLAN: 350
+02:48:08.597 VLAN_FOUND:350
+02:48:08.598 SUCCESS: Closing sniffer.

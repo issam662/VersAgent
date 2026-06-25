@@ -1,0 +1,10 @@
+# Custom Instructions for AI Assistant
+# Add any rules, preferences, or project-specific instructions here.
+# The AI will automatically read and follow these rules in this workspace.
+
+
+-always update the script for restarting the app
+-never ask me to run a command myself either run it yourself, or creat a script for me to click
+-always restart the service at the end if your action caused it to go down
+-agent vlan scan uses Standalone C# Sniffer (v4) via Parallel CDP/LLDP discovery.
+-always up the agent version if u make any changes to it

@@ -1,0 +1,227 @@
+.machines-page {
+    max-width: 1400px;
+}
+
+/* Toolbar */
+.machines-toolbar {
+    display: flex;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.search-box {
+    flex: 1;
+    position: relative;
+    max-width: 400px;
+}
+
+.search-icon {
+    position: absolute;
+    left: var(--space-md);
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--aptiv-gray-500);
+    pointer-events: none;
+}
+
+.search-input {
+    width: 100%;
+    padding-left: 2.75rem;
+}
+
+.btn.active {
+    background: var(--aptiv-primary);
+    border-color: var(--aptiv-primary);
+    color: var(--aptiv-white);
+}
+
+/* Filters Panel */
+.filters-panel {
+    display: flex;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+    background: var(--aptiv-gray-900);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-lg);
+    animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 200px;
+}
+
+.filter-group .input {
+    background: var(--aptiv-gray-800);
+}
+
+/* Table */
+.table-loading,
+.table-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2xl);
+    color: var(--aptiv-gray-500);
+    gap: var(--space-md);
+}
+
+.machine-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--aptiv-white);
+    font-weight: 500;
+}
+
+.machine-link:hover {
+    color: var(--aptiv-primary);
+}
+
+.table-actions {
+    display: flex;
+    gap: var(--space-xs);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-top: var(--space-xl);
+    padding-top: var(--space-xl);
+    border-top: 1px solid var(--aptiv-gray-800);
+}
+
+.pagination-info {
+    color: var(--aptiv-gray-500);
+    font-size: 0.875rem;
+}
+
+.pagination .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .machines-toolbar {
+        flex-direction: column;
+    }
+
+    .search-box {
+        max-width: 100%;
+    }
+
+    .filters-panel {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        min-width: 100%;
+    }
+}
+
+/* ── Offline sub-status badges ── */
+.badge-intervention {
+    background-color: rgba(249, 115, 22, 0.15);
+    color: #f97316;
+    border: 1px solid rgba(249, 115, 22, 0.35);
+}
+
+.badge-temporary {
+    background-color: rgba(107, 114, 128, 0.15);
+    color: #9ca3af;
+    border: 1px solid rgba(107, 114, 128, 0.35);
+}
+
+/* Status badge dropdown trigger */
+.status-badge-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.status-badge-wrapper .badge {
+    cursor: pointer;
+    user-select: none;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.status-badge-wrapper .badge:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+/* Status dropdown menu */
+.status-dropdown {
+    position: absolute;
+    z-index: 50;
+    top: calc(100% + 4px);
+    left: 0;
+    min-width: 180px;
+    background: var(--aptiv-gray-900);
+    border: 1px solid var(--aptiv-gray-700);
+    border-radius: var(--radius-md);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    animation: fadeInDown 0.15s ease;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s ease;
+    color: var(--aptiv-gray-300);
+}
+
+.status-dropdown-item:hover {
+    background: var(--aptiv-gray-800);
+}
+
+.status-dropdown-item.active {
+    background: var(--aptiv-gray-800);
+    color: var(--aptiv-white);
+}
+
+.status-dropdown-item .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.dot-offline   { background: #ef4444; }
+.dot-intervention { background: #f97316; }
+.dot-temporary { background: #6b7280; }

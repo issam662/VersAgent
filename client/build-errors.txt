@@ -1,0 +1,12 @@
+src/components/Cubes/Cubes.tsx(40,33): error TS2503: Cannot find namespace 'NodeJS'.
+src/pages/AdminDashboard/AdminDashboard.tsx(37,26): error TS2345: Argument of type 'DashboardStats' is not assignable to parameter of type 'SetStateAction<DashboardStats | null>'.
+src/pages/Incidents/Incidents.tsx(85,63): error TS2345: Argument of type '{ title: string; description: string; priority: SeverityType; status: StatusType; }' is not assignable to parameter of type 'Partial<Incident>'.
+  Types of property 'priority' are incompatible.
+    Type 'SeverityType' is not assignable to type '"P1" | "P2" | "P3" | "P4" | undefined'.
+      Type '"PP2"' is not assignable to type '"P1" | "P2" | "P3" | "P4" | undefined'.
+src/pages/Incidents/Incidents.tsx(87,42): error TS2345: Argument of type '{ title: string; description: string; priority: SeverityType; status: StatusType; }' is not assignable to parameter of type 'Partial<Incident>'.
+  Types of property 'priority' are incompatible.
+    Type 'SeverityType' is not assignable to type '"P1" | "P2" | "P3" | "P4" | undefined'.
+      Type '"PP2"' is not assignable to type '"P1" | "P2" | "P3" | "P4" | undefined'.
+src/pages/Login/Login.tsx(1,31): error TS1484: 'FormEvent' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/pages/Vulnerabilities/Vulnerabilities.tsx(2,41): error TS6133: 'ShieldAlert' is declared but its value is never read.

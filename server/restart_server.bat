@@ -1,0 +1,6 @@
+@echo off
+echo Killing existing Node.js processes...
+taskkill /F /IM node.exe
+timeout /t 2
+echo Starting server...
+npm run dev

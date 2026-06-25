@@ -1,0 +1,288 @@
+﻿
+> aptiv-system-service@1.1.0 dist
+> npm run build && electron-builder build --windows nsis --x64
+
+
+> aptiv-system-service@1.1.0 build
+> tsc
+
+  ÔÇó electron-builder  version=25.1.8 os=10.0.26200
+  ÔÇó loaded configuration  file=package.json ("build" field)
+  ÔÇó effective config  config=directories:
+  output: release-1.1.0
+  buildResources: build
+appId: com.aptiv.sysagent
+productName: APTIV System Service
+asar: true
+win:
+  target:
+    - nsis
+  icon: assets/icon.ico
+  requestedExecutionLevel: requireAdministrator
+  signAndEditExecutable: false
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: false
+  createStartMenuShortcut: false
+  runAfterFinish: false
+  include: installer.nsh
+  script: installer.nsi
+  installerSidebar: null
+  license: null
+files:
+  - filter:
+      - dist/**/*
+      - src/renderer/**/*
+extraResources:
+  - from: src/renderer
+    to: renderer
+  - from: src/resources
+    to: resources
+
+  ÔÇó spawning        command=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-bin\win\x64\app-builder.exe node-dep-tree --dir C:\Users\ahhpks\Documents\App\PFE PROJECT\agent
+  ÔÇó unresolved deps  unresolved=@tediousjs/connection-stringdebugtarntedious nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=@azure/core-auth@azure/identity@azure/keyvault-keys@js-joda/corejs-md4native-duplexpairsprintf-js
+                     nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules
+                     round=0
+  ÔÇó unresolved deps  unresolved=inherits nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=base64-jsieee754 nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=abort-controllereventsprocessstring_decoder nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=safer-buffer nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=@azure/msal-commonjsonwebtoken nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=jwslodash.includeslodash.isbooleanlodash.isintegerlodash.isnumberlodash.isplainobjectlodash.isstringlodash.oncems
+                     nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules
+                     round=0
+  ÔÇó exited          command=app-builder.exe code=0 pid=41432 out=[{"dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules","deps":[{"name":"@azure-rest/core-client","version":"2.5.1"},{"name":"@azure/abort-controller","version":"2.1.2"},{"name":"@azure/core-auth","version":"1.10.1"},{"name":"@azure/core-client","version":"1.10.1"},{"name":"@azure/core-http-compat","version":"2.3.2"},{"name":"@azure/core-lro","version":"2.7.2"},{"name":"@azure/core-paging","version":"1.6.2"},{"name":"@azure/core-rest-pipeline","version":"1.22.2"},{"name":"@azure/core-tracing","version":"1.3.1"},{"name":"@azure/core-util","version":"1.13.1"},{"name":"@azure/identity","version":"4.13.0"},{"name":"@azure/keyvault-common","version":"2.0.0"},{"name":"@azure/keyvault-keys","version":"4.10.0"},{"name":"@azure/logger","version":"1.3.0"},{"name":"@azure/msal-browser","version":"4.28.2"},{"name":"@azure/msal-common","version":"15.14.2"},{"name":"@azure/msal-node","version":"3.8.7"},{"name":"@js-joda/core","version":"5.7.0"},{"name":"@tediousjs/connection-string","version":"0.6.0"},{"name":"@typespec/ts-http-runtime","version":"0.3.3"},{"name":"abort-controller","version":"3.0.0"},{"name":"agent-base","version":"7.1.4"},{"name":"asynckit","version":"0.4.0"},{"name":"axios","version":"1.13.5"},{"name":"base64-js","version":"1.5.1"},{"name":"buffer-equal-constant-time","version":"1.0.1"},{"name":"bundle-name","version":"4.1.0"},{"name":"call-bind-apply-helpers","version":"1.0.2"},{"name":"combined-stream","version":"1.0.8"},{"name":"debug","version":"4.4.3"},{"name":"default-browser","version":"5.5.0"},{"name":"default-browser-id","version":"5.0.1"},{"name":"define-lazy-prop","version":"3.0.0"},{"name":"delayed-stream","version":"1.0.0"},{"name":"dunder-proto","version":"1.0.1"},{"name":"ecdsa-sig-formatter","version":"1.0.11"},{"name":"es-define-property","version":"1.0.1"},{"name":"es-errors","version":"1.3.0"},{"name":"es-object-atoms","version":"1.1.1"},{"name":"es-set-tostringtag","version":"2.1.0"},{"name":"event-target-shim","version":"5.0.1"},{"name":"events","version":"3.3.0"},{"name":"follow-redirects","version":"1.15.11"},{"name":"form-data","version":"4.0.5"},{"name":"function-bind","version":"1.1.2"},{"name":"get-intrinsic","version":"1.3.0"},{"name":"get-proto","version":"1.0.1"},{"name":"gopd","version":"1.2.0"},{"name":"has-symbols","version":"1.1.0"},{"name":"has-tostringtag","version":"1.0.2"},{"name":"hasown","version":"2.0.2"},{"name":"http-proxy-agent","version":"7.0.2"},{"name":"https-proxy-agent","version":"7.0.6"},{"name":"ieee754","version":"1.2.1"},{"name":"inherits","version":"2.0.4"},{"name":"is-docker","version":"3.0.0"},{"name":"is-inside-container","version":"1.0.0"},{"name":"is-wsl","version":"3.1.1"},{"name":"js-md4","version":"0.3.2"},{"name":"jsonwebtoken","version":"9.0.3"},{"name":"jwa","version":"2.0.1"},{"name":"jws","version":"4.0.1"},{"name":"lodash.includes","version":"4.3.0"},{"name":"lodash.isboolean","version":"3.0.3"},{"name":"lodash.isinteger","version":"4.0.4"},{"name":"lodash.isnumber","version":"3.0.3"},{"name":"lodash.isplainobject","version":"4.0.6"},{"name":"lodash.isstring","version":"4.0.1"},{"name":"lodash.once","version":"4.1.1"},{"name":"math-intrinsics","version":"1.1.0"},{"name":"mime-db","version":"1.52.0"},{"name":"mime-types","version":"2.1.35"},{"name":"ms","version":"2.1.3"},{"name":"mssql","version":"12.2.0"},{"name":"native-duplexpair","version":"1.0.0"},{"name":"open","version":"10.2.0"},{"name":"process","version":"0.11.10"},{"name":"proxy-from-env","version":"1.1.0"},{"name":"run-applescript","version":"7.1.0"},{"name":"safe-buffer","version":"5.2.1"},{"name":"safer-buffer","version":"2.1.2"},{"name":"sprintf-js","version":"1.1.3"},{"name":"string_decoder","version":"1.3.0"},{"name":"tarn","version":"3.0.2"},{"name":"tedious","version":"19.2.1"},{"name":"tslib","version":"2.8.1"},{"name":"uuid","version":"11.1.0"},{"name":"wsl-utils","version":"0.1.0"}]},{"dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\jsonwebtoken\\node_modules","deps":[{"name":"semver","version":"7.7.4"}]},{"dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\mssql\\node_modules","deps":[{"name":"commander","version":"11.1.0"}]},{"dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tedious\\node_modules","deps":[{"name":"bl","version":"6.1.6"},{"name":"buffer","version":"6.0.3"},{"name":"iconv-lite","version":"0.7.2"},{"name":"readable-stream","version":"4.7.0"}]},{"dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\msal-node\\node_modules","deps":[{"name":"uuid","version":"8.3.2"}]}]
+  ÔÇó executing @electron/rebuild  electronVersion=33.4.11 arch=x64 buildFromSource=false appDir=./
+  ÔÇó installing native dependencies  arch=x64
+  ÔÇó completed installing native dependencies
+  ÔÇó packaging       platform=win32 arch=x64 electron=33.4.11 appOutDir=release-1.1.0\win-unpacked
+  ÔÇó spawning        command=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-bin\win\x64\app-builder.exe unpack-electron --configuration [{"platform":"win32","arch":"x64","version":"33.4.11"}] --output C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\win-unpacked --distMacOsAppName Electron.app
+  ÔÇó map async       taskCount=2
+  ÔÇó map async       taskCount=1
+  ÔÇó map async       taskCount=73
+  ÔÇó exited          command=app-builder.exe code=0 pid=7924
+  ÔÇó spawning        command=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-bin\win\x64\app-builder.exe node-dep-tree --dir C:\Users\ahhpks\Documents\App\PFE PROJECT\agent --flatten
+  ÔÇó unresolved deps  unresolved=@tediousjs/connection-stringdebugtarntedious nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=@azure/core-auth@azure/identity@azure/keyvault-keys@js-joda/corejs-md4native-duplexpairsprintf-js
+                     nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules
+                     round=0
+  ÔÇó unresolved deps  unresolved=inherits nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=base64-jsieee754 nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=abort-controllereventsprocessstring_decoder nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=safer-buffer nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=@azure/msal-commonjsonwebtoken nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules round=0
+  ÔÇó unresolved deps  unresolved=jwslodash.includeslodash.isbooleanlodash.isintegerlodash.isnumberlodash.isplainobjectlodash.isstringlodash.oncems
+                     nodeModuleDir=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules
+                     round=0
+  ÔÇó exited          command=app-builder.exe code=0 pid=62360 out=[{"name":"@azure-rest/core-client","version":"2.5.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure-rest\\core-client"},{"name":"@azure/abort-controller","version":"2.1.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\abort-controller"},{"name":"@azure/core-auth","version":"1.10.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-auth"},{"name":"@azure/core-client","version":"1.10.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-client"},{"name":"@azure/core-http-compat","version":"2.3.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-http-compat"},{"name":"@azure/core-lro","version":"2.7.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-lro"},{"name":"@azure/core-paging","version":"1.6.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-paging"},{"name":"@azure/core-rest-pipeline","version":"1.22.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-rest-pipeline"},{"name":"@azure/core-tracing","version":"1.3.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-tracing"},{"name":"@azure/core-util","version":"1.13.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\core-util"},{"name":"@azure/identity","version":"4.13.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\identity"},{"name":"@azure/keyvault-common","version":"2.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\keyvault-common"},{"name":"@azure/keyvault-keys","version":"4.10.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\keyvault-keys"},{"name":"@azure/logger","version":"1.3.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\logger"},{"name":"@azure/msal-browser","version":"4.28.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\msal-browser"},{"name":"@azure/msal-common","version":"15.14.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\msal-common"},{"name":"@azure/msal-node","version":"3.8.7","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\msal-node","conflictDependency":[{"name":"uuid","version":"8.3.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@azure\\msal-node\\node_modules\\uuid"}]},{"name":"@js-joda/core","version":"5.7.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@js-joda\\core"},{"name":"@tediousjs/connection-string","version":"0.6.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@tediousjs\\connection-string"},{"name":"@typespec/ts-http-runtime","version":"0.3.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\@typespec\\ts-http-runtime"},{"name":"abort-controller","version":"3.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\abort-controller"},{"name":"agent-base","version":"7.1.4","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\agent-base"},{"name":"asynckit","version":"0.4.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\asynckit"},{"name":"axios","version":"1.13.5","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\axios"},{"name":"base64-js","version":"1.5.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\base64-js"},{"name":"buffer-equal-constant-time","version":"1.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\buffer-equal-constant-time"},{"name":"bundle-name","version":"4.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\bundle-name"},{"name":"call-bind-apply-helpers","version":"1.0.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\call-bind-apply-helpers"},{"name":"combined-stream","version":"1.0.8","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\combined-stream"},{"name":"debug","version":"4.4.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\debug"},{"name":"default-browser","version":"5.5.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\default-browser","conflictDependency":[{"name":"default-browser-id","version":"5.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\default-browser-id"}]},{"name":"define-lazy-prop","version":"3.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\define-lazy-prop"},{"name":"delayed-stream","version":"1.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\delayed-stream"},{"name":"dunder-proto","version":"1.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\dunder-proto"},{"name":"ecdsa-sig-formatter","version":"1.0.11","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\ecdsa-sig-formatter"},{"name":"es-define-property","version":"1.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\es-define-property"},{"name":"es-errors","version":"1.3.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\es-errors"},{"name":"es-object-atoms","version":"1.1.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\es-object-atoms"},{"name":"es-set-tostringtag","version":"2.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\es-set-tostringtag"},{"name":"event-target-shim","version":"5.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\event-target-shim"},{"name":"events","version":"3.3.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\events"},{"name":"follow-redirects","version":"1.15.11","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\follow-redirects"},{"name":"form-data","version":"4.0.5","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\form-data"},{"name":"function-bind","version":"1.1.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\function-bind"},{"name":"get-intrinsic","version":"1.3.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\get-intrinsic"},{"name":"get-proto","version":"1.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\get-proto"},{"name":"gopd","version":"1.2.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\gopd"},{"name":"has-symbols","version":"1.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\has-symbols"},{"name":"has-tostringtag","version":"1.0.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\has-tostringtag"},{"name":"hasown","version":"2.0.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\hasown"},{"name":"http-proxy-agent","version":"7.0.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\http-proxy-agent"},{"name":"https-proxy-agent","version":"7.0.6","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\https-proxy-agent"},{"name":"ieee754","version":"1.2.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\ieee754"},{"name":"inherits","version":"2.0.4","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\inherits"},{"name":"is-docker","version":"3.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\is-docker"},{"name":"is-inside-container","version":"1.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\is-inside-container"},{"name":"is-wsl","version":"3.1.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\is-wsl"},{"name":"js-md4","version":"0.3.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\js-md4"},{"name":"jsonwebtoken","version":"9.0.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\jsonwebtoken","conflictDependency":[{"name":"semver","version":"7.7.4","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\jsonwebtoken\\node_modules\\semver"}]},{"name":"jwa","version":"2.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\jwa"},{"name":"jws","version":"4.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\jws"},{"name":"lodash.includes","version":"4.3.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.includes"},{"name":"lodash.isboolean","version":"3.0.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.isboolean"},{"name":"lodash.isinteger","version":"4.0.4","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.isinteger"},{"name":"lodash.isnumber","version":"3.0.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.isnumber"},{"name":"lodash.isplainobject","version":"4.0.6","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.isplainobject"},{"name":"lodash.isstring","version":"4.0.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.isstring"},{"name":"lodash.once","version":"4.1.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\lodash.once"},{"name":"math-intrinsics","version":"1.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\math-intrinsics"},{"name":"mime-db","version":"1.52.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\mime-db"},{"name":"mime-types","version":"2.1.35","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\mime-types"},{"name":"ms","version":"2.1.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\ms"},{"name":"mssql","version":"12.2.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\mssql","conflictDependency":[{"name":"commander","version":"11.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\mssql\\node_modules\\commander"}]},{"name":"native-duplexpair","version":"1.0.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\native-duplexpair"},{"name":"open","version":"10.2.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\open"},{"name":"process","version":"0.11.10","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\process"},{"name":"proxy-from-env","version":"1.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\proxy-from-env"},{"name":"run-applescript","version":"7.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\run-applescript"},{"name":"safe-buffer","version":"5.2.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\safe-buffer"},{"name":"safer-buffer","version":"2.1.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\safer-buffer"},{"name":"sprintf-js","version":"1.1.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\sprintf-js"},{"name":"string_decoder","version":"1.3.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\string_decoder"},{"name":"tarn","version":"3.0.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tarn"},{"name":"tedious","version":"19.2.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tedious","conflictDependency":[{"name":"bl","version":"6.1.6","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tedious\\node_modules\\bl"},{"name":"buffer","version":"6.0.3","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tedious\\node_modules\\buffer"},{"name":"iconv-lite","version":"0.7.2","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tedious\\node_modules\\iconv-lite"},{"name":"readable-stream","version":"4.7.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tedious\\node_modules\\readable-stream"}]},{"name":"tslib","version":"2.8.1","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\tslib"},{"name":"uuid","version":"11.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\uuid"},{"name":"wsl-utils","version":"0.1.0","dir":"C:\\Users\\ahhpks\\Documents\\App\\PFE PROJECT\\agent\\node_modules\\wsl-utils"}]
+  ÔÇó updating asar integrity executable resource  executablePath=release-1.1.0\win-unpacked\APTIV System Service.exe
+  ÔÇó copying files using pattern  matcher=from: C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\src\renderer, to: C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\win-unpacked\resources\renderer, patterns: **/*
+  ÔÇó copying         src=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\src\renderer destination=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\win-unpacked\resources\renderer
+  ÔÇó copying files using pattern  matcher=from: C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\src\resources, to: C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\win-unpacked\resources\resources, patterns: **/*
+  ÔÇó copying         src=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\src\resources destination=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\win-unpacked\resources\resources
+  ÔÇó getPublishConfigsForUpdateInfo: no publishConfigs, detect using repository info
+  ÔÇó building        target=nsis file=release-1.1.0\APTIV System Service Setup 1.1.0.exe archs=x64 oneClick=false perMachine=true
+  ÔÇó spawning        command=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-bin\win\x64\app-builder.exe icon --format ico --root C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build --root C:\Users\ahhpks\Documents\App\PFE PROJECT\agent --out C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\.icon-ico --input assets/icon.ico
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build\assets\icon.ico
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\assets\icon.ico
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build\icon.ico
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\icon.ico
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build\icons
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\icons
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build\icon.png
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\icon.png
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build\icon.icns
+  ÔÇó path doesn't exist  path=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\icon.icns
+  ÔÇó no icons found, using provided fallback sources  
+  ÔÇó exited          command=app-builder.exe code=0 pid=59436 out={"icons":null,"isFallback":true}
+  ÔÇó default Electron icon is used  reason=application icon is not set
+  ÔÇó spawning        command=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-bin\win\x64\app-builder.exe download-artifact --name nsis-3.0.4.1 --url https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z --sha512 VKMiizYdmNdJOWpRGz4trl4lD++BvYP2irAXpMilheUP0pc93iKlWAoP843Vlraj8YG19CVn0j+dCo/hURz9+Q==
+  ÔÇó found existing  path=C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1
+  ÔÇó exited          command=app-builder.exe code=0 pid=33396 out=C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1
+  ÔÇó executing       file=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\7zip-bin\win\x64\7za.exe args=a -bd -mx=9 -md=1m -mtc=off -ms=off -mtm=off -mta=off C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\aptiv-system-service-1.1.0-x64.nsis.7z . -xr!*.avi -xr!*.mov -xr!*.m4v -xr!*.mp4 -xr!*.m4p -xr!*.qt -xr!*.mkv -xr!*.webm -xr!*.vmdk cwd=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\win-unpacked
+nsis package, x64: 33s 489ms
+  ÔÇó executing       file=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\7zip-bin\win\x64\7za.exe args=l C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\aptiv-system-service-1.1.0-x64.nsis.7z
+  ÔÇó executed        file=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\7zip-bin\win\x64\7za.exe stdout=
+7-Zip (a) 21.07 (x64) : Copyright (c) 1999-2021 Igor Pavlov : 2021-12-26
+                      Scanning the drive for archives:
+1 file, 87321986 bytes (84 MiB)
+                      Listing archive: C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\aptiv-system-service-1.1.0-x64.nsis.7z
+                      --
+Path = C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\aptiv-system-service-1.1.0-x64.nsis.7z
+Type = 7z
+Physical Size = 87321986
+Headers Size = 1814
+Method = LZMA2:20 LZMA:20 BCJ2
+Solid = -
+Blocks = 91
+                         Date      Time    Attr         Size   Compressed  Name
+------------------- ----- ------------ ------------  ------------------------
+                    D....            0            0  locales
+                    D....            0            0  resources
+                    D....            0            0  resources\renderer
+                    D....            0            0  resources\resources
+                    D....            0            0  resources\resources\scripts
+                    ....A       151599       140724  chrome_100_percent.pak
+                    ....A       228644       214257  chrome_200_percent.pak
+                    ....A     10468208      3447093  icudtl.dat
+                    ....A         1096          690  LICENSE.electron.txt
+                    ....A      9170910       240578  LICENSES.chromium.html
+                    ....A       533447       129881  locales\af.pak
+                    ....A       860998       146625  locales\am.pak
+                    ....A       943105       150344  locales\ar.pak
+                    ....A       982837       145839  locales\bg.pak
+                    ....A      1267377       152065  locales\bn.pak
+                    ....A       598914       133101  locales\ca.pak
+                    ....A       617061       143336  locales\cs.pak
+                    ....A       558874       130452  locales\da.pak
+                    ....A       596668       137452  locales\de.pak
+                    ....A      1076226       153636  locales\el.pak
+                    ....A       485870       120287  locales\en-GB.pak
+                    ....A       490357       120649  locales\en-US.pak
+                    ....A       589661       132546  locales\es-419.pak
+                    ....A       589252       132210  locales\es.pak
+                    ....A       536353       133681  locales\et.pak
+                    ....A       875804       141993  locales\fa.pak
+                    ....A       547254       133268  locales\fi.pak
+                    ....A       618873       132838  locales\fil.pak
+                    ....A       637402       137421  locales\fr.pak
+                    ....A      1247883       151106  locales\gu.pak
+                    ....A       769514       139229  locales\he.pak
+                    ....A      1316123       155994  locales\hi.pak
+                    ....A       595033       138749  locales\hr.pak
+                    ....A       640919       145109  locales\hu.pak
+                    ....A       529377       120948  locales\id.pak
+                    ....A       581039       131086  locales\it.pak
+                    ....A       708056       126970  locales\ja.pak
+                    ....A      1424041       152928  locales\kn.pak
+                    ....A       599155       123303  locales\ko.pak
+                    ....A       644271       141236  locales\lt.pak
+                    ....A       643341       142413  locales\lv.pak
+                    ....A      1481389       156798  locales\ml.pak
+                    ....A      1222183       147781  locales\mr.pak
+                    ....A       554828       123091  locales\ms.pak
+                    ....A       537826       127359  locales\nb.pak
+                    ....A       556192       130697  locales\nl.pak
+                    ....A       619358       143882  locales\pl.pak
+                    ....A       581605       132408  locales\pt-BR.pak
+                    ....A       585543       131248  locales\pt-PT.pak
+                    ....A       606334       135008  locales\ro.pak
+                    ....A       996183       153123  locales\ru.pak
+                    ....A       626642       146368  locales\sk.pak
+                    ....A       601760       138759  locales\sl.pak
+                    ....A       924879       146016  locales\sr.pak
+                    ....A       541011       127384  locales\sv.pak
+                    ....A       570564       130802  locales\sw.pak
+                    ....A      1468553       152392  locales\ta.pak
+                    ....A      1359284       152745  locales\te.pak
+                    ....A      1142647       134087  locales\th.pak
+                    ....A       581314       132073  locales\tr.pak
+                    ....A       996327       151219  locales\uk.pak
+                    ....A       870802       142319  locales\ur.pak
+                    ....A       689431       131844  locales\vi.pak
+                    ....A       496347       122726  locales\zh-CN.pak
+                    ....A       491043       121131  locales\zh-TW.pak
+                    ....A     45525997      4869536  resources\app.asar
+                    ....A         7199         1629  resources\renderer\index.html
+                    ....A         3775         1346  resources\renderer\overlay.html
+                    ....A        17494         4251  resources\renderer\renderer.js
+                    ....A        16326         2887  resources\renderer\styles.css
+                    ....A         9648         2360  resources\resources\scripts\CdpSniffer.cs
+                    ....A         3721         1349  resources\resources\scripts\cdp_sniffer.py
+                    ....A        17345         4036  resources\resources\scripts\invoke_cdp.ps1
+                    ....A        29664         5038  resources\resources\scripts\NativeNetScanner.cs
+                    ....A          970          389  resources\resources\scripts\out.txt
+                    ....A          484          328  resources\resources\scripts\out_utf8.json
+                    ....A         1689          931  resources\resources\scripts\RunScanner.ps1
+                    ....A         1819          530  resources\resources\scripts\sniffer_log.txt
+                    ....A          179          140  resources\resources\scripts\TestNet.cs
+                    ....A      5756465      5700304  resources.pak
+                    ....A       316538        55327  snapshot_blob.bin
+                    ....A       687473       120747  v8_context_snapshot.bin
+                    ....A          106           96  vk_swiftshader_icd.json
+                    ....A    188784128     57090988  APTIV System Service.exe
+                    ....A      4916728      1561984  d3dcompiler_47.dll
+                    ....A      2927616       904574  ffmpeg.dll
+                    ....A       493056       171230  libEGL.dll
+                    ....A      8417792      2267894  libGLESv2.dll
+                    ....A       107520        49095  resources\elevate.exe
+                    ....A      1318072      1287270  resources\resources\npcap-installer.exe
+                    ....A         9216         3883  resources\resources\scripts\CdpSniffer.exe
+                    ....A         8704         3693  resources\resources\scripts\Tester.exe
+                    ....A         9216         3874  resources\resources\scripts\Tester2.exe
+                    ....A         3584         1210  resources\resources\scripts\TestNet.exe
+                    ....A      5533184      1312617  vk_swiftshader.dll
+                    ....A       894976       259339  vulkan-1.dll
+------------------- ----- ------------ ------------  ------------------------
+                             328048271     87320172  91 files, 5 folders
+
+  ÔÇó spawning        command=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-bin\win\x64\app-builder.exe download-artifact --name nsis-resources-3.4.1 --url https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z --sha512 Dqd6g+2buwwvoG1Vyf6BHR1b+25QMmPcwZx40atOT57gH27rkjOei1L0JTldxZu4NFoEmW4kJgZ3DlSWVON3+Q==
+  ÔÇó found existing  path=C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-resources-3.4.1
+  ÔÇó exited          command=app-builder.exe code=0 pid=60396 out=C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-resources-3.4.1
+  ÔÇó uninstaller is not signed by electron-builder  reason=custom NSIS script is used
+  ÔÇó spawning        command=C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1\Bin\makensis.exe -WX -INPUTCHARSET UTF8 -DAPP_ID=com.aptiv.sysagent -DAPP_GUID=ea82400c-3766-5743-9a1a-8189873f0476 -DUNINSTALL_APP_KEY=ea82400c-3766-5743-9a1a-8189873f0476 -DPRODUCT_NAME=APTIV System Service -DPRODUCT_FILENAME=APTIV System Service -DAPP_FILENAME=APTIV System Service -DAPP_DESCRIPTION=APTIV PC Inventory Agent -DVERSION=1.1.0 -DPROJECT_DIR=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent -DBUILD_RESOURCES_DIR=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build -DAPP_PACKAGE_NAME=aptiv-system-service -DAPP_64=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\aptiv-system-service-1.1.0-x64.nsis.7z -DAPP_64_NAME=aptiv-system-service-1.1.0-x64.nsis.7z -DAPP_64_HASH=638A0BAA86117A234CEB6F638E206CC3E3EFCCCA6807D64318966089BB66E557855B786E8920101FFC171CF9BCDCB7063DC60FADEF08DC4AF612B72DEE9AD69A -DAPP_64_UNPACKED_SIZE=320360 -DCOMPANY_NAME=APTIV -DAPP_INSTALLER_STORE_FILE=aptiv-system-service-updater\installer.exe -DCOMPRESSION_METHOD=7z -DHIDE_RUN_AFTER_FINISH -DMULTIUSER_INSTALLMODE_ALLOW_ELEVATION -DINSTALL_MODE_PER_ALL_USERS -DINSTALL_MODE_PER_ALL_USERS_REQUIRED -DSHORTCUT_NAME=APTIV System Service -DUNINSTALL_DISPLAY_NAME=APTIV System Service 1.1.0 -DDO_NOT_CREATE_DESKTOP_SHORTCUT -DDO_NOT_CREATE_START_MENU_SHORTCUT -DMUI_WELCOMEFINISHPAGE_BITMAP=${NSISDIR}\Contrib\Graphics\Wizard\nsis3-metro.bmp -DMUI_UNWELCOMEFINISHPAGE_BITMAP=${NSISDIR}\Contrib\Graphics\Wizard\nsis3-metro.bmp -DESTIMATED_SIZE=320360 -DCOMPRESS=auto -DUNINSTALLER_OUT_FILE -XOutFile "C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\APTIV System Service Setup 1.1.0.exe" -XVIProductVersion 1.1.0.0 -XVIAddVersionKey /LANG=1033 ProductName "APTIV System Service" -XVIAddVersionKey /LANG=1033 ProductVersion "1.1.0" -XVIAddVersionKey /LANG=1033 LegalCopyright "Copyright ┬® 2026 APTIV" -XVIAddVersionKey /LANG=1033 FileDescription "APTIV PC Inventory Agent" -XVIAddVersionKey /LANG=1033 FileVersion "1.1.0" -XVIAddVersionKey /LANG=1033 CompanyName "APTIV" -XUnicode true -XSetCompressor zlib - cwd=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\app-builder-lib\templates\nsis
+Command line defined: "APP_ID=com.aptiv.sysagent"
+Command line defined: "APP_GUID=ea82400c-3766-5743-9a1a-8189873f0476"
+Command line defined: "UNINSTALL_APP_KEY=ea82400c-3766-5743-9a1a-8189873f0476"
+Command line defined: "PRODUCT_NAME=APTIV System Service"
+Command line defined: "PRODUCT_FILENAME=APTIV System Service"
+Command line defined: "APP_FILENAME=APTIV System Service"
+Command line defined: "APP_DESCRIPTION=APTIV PC Inventory Agent"
+Command line defined: "VERSION=1.1.0"
+Command line defined: "PROJECT_DIR=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent"
+Command line defined: "BUILD_RESOURCES_DIR=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\build"
+Command line defined: "APP_PACKAGE_NAME=aptiv-system-service"
+Command line defined: "APP_64=C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\release-1.1.0\aptiv-system-service-1.1.0-x64.nsis.7z"
+Command line defined: "APP_64_NAME=aptiv-system-service-1.1.0-x64.nsis.7z"
+Command line defined: "APP_64_HASH=638A0BAA86117A234CEB6F638E206CC3E3EFCCCA6807D64318966089BB66E557855B786E8920101FFC171CF9BCDCB7063DC60FADEF08DC4AF612B72DEE9AD69A"
+Command line defined: "APP_64_UNPACKED_SIZE=320360"
+Command line defined: "COMPANY_NAME=APTIV"
+Command line defined: "APP_INSTALLER_STORE_FILE=aptiv-system-service-updater\installer.exe"
+Command line defined: "COMPRESSION_METHOD=7z"
+Command line defined: "HIDE_RUN_AFTER_FINISH"
+Command line defined: "MULTIUSER_INSTALLMODE_ALLOW_ELEVATION"
+Command line defined: "INSTALL_MODE_PER_ALL_USERS"
+Command line defined: "INSTALL_MODE_PER_ALL_USERS_REQUIRED"
+Command line defined: "SHORTCUT_NAME=APTIV System Service"
+Command line defined: "UNINSTALL_DISPLAY_NAME=APTIV System Service 1.1.0"
+Command line defined: "DO_NOT_CREATE_DESKTOP_SHORTCUT"
+Command line defined: "DO_NOT_CREATE_START_MENU_SHORTCUT"
+Command line defined: "MUI_WELCOMEFINISHPAGE_BITMAP=${NSISDIR}\Contrib\Graphics\Wizard\nsis3-metro.bmp"
+Command line defined: "MUI_UNWELCOMEFINISHPAGE_BITMAP=${NSISDIR}\Contrib\Graphics\Wizard\nsis3-metro.bmp"
+Command line defined: "ESTIMATED_SIZE=320360"
+Command line defined: "COMPRESS=auto"
+Command line defined: "UNINSTALLER_OUT_FILE"
+Processing config: C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1\nsisconf.nsh
+Processing script file: "<stdin>" (UTF8)
+node.exe : !define: 
+"FOLDERID_UserProgramFiles" already defined!
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" 
+"C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (! 
+   define: "FOLDE...lready defined!:String) [  
+  ], RemoteException
+    + FullyQualifiedErrorId : NativeCommandErr 
+   or
+ 
+!include: error in script: "multiUser.nsh" on 
+line 4
+Error in script "<stdin>" on line 90 -- 
+aborting creation process
+  ÔÇó exited          command=makensis.exe code=1 pid=28312
+  Ô¿» C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1\Bin\makensis.exe process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+Exit code:
+1  failedTask=build stackTrace=Error: C:\Users\ahhpks\AppData\Local\electron-builder\Cache\nsis\nsis-3.0.4.1\Bin\makensis.exe process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+Exit code:
+1
+    at ChildProcess.<anonymous> (C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\builder-util\src\util.ts:255:14)
+    at Object.onceWrapper (node:events:623:26)
+    at ChildProcess.emit (node:events:508:28)
+    at ChildProcess.cp.emit (C:\Users\ahhpks\Documents\App\PFE PROJECT\agent\node_modules\cross-spawn\lib\enoent.js:34:29)
+    at maybeClose (node:internal/child_process:1101:16)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:305:5)

@@ -1,0 +1,36 @@
+.printers-page {
+    @apply h-full p-6 space-y-6 flex flex-col bg-slate-50;
+}
+
+.printers-toolbar {
+    @apply flex items-center justify-between gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-200 mt-4 overflow-x-auto whitespace-nowrap;
+}
+
+.table-loading,
+.table-empty {
+    @apply flex flex-col items-center justify-center p-12 text-slate-500 bg-white rounded-xl shadow-sm border border-slate-200 mt-4 h-64;
+}
+
+.table-empty p {
+    @apply mt-4 text-lg font-medium;
+}
+
+.printer-link {
+    @apply font-medium text-primary hover:text-primary/80 flex items-center gap-2;
+}
+
+.custom-url-link {
+    @apply text-blue-600 hover:text-blue-800 underline decoration-blue-200 hover:decoration-blue-800 transition-colors;
+}
+
+.status-badge {
+    @apply flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium w-fit;
+}
+
+.status-online {
+    @apply bg-green-100 text-green-700;
+}
+
+.status-offline {
+    @apply bg-red-100 text-red-700;
+}

@@ -1,0 +1,353 @@
+.news-carousel {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: var(--space-md);
+    padding-bottom: 32px;
+    /* Space for dots */
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    gap: var(--space-md);
+    /* Match gap with calculation */
+    flex: 1;
+    overflow: hidden;
+    height: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 calc(50% - var(--space-md) / 2);
+    /* Correct width calculation */
+    min-width: 0;
+    animation: slideIn 0.4s ease-out;
+    height: 100%;
+    position: relative;
+    /* Added for glows */
+}
+
+/* Decorative Light Circles moved to slide for better clipping on card */
+.carousel-slide::before,
+.carousel-slide::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--aptiv-primary) 0%, transparent 70%);
+    opacity: 0.1;
+    filter: blur(20px);
+    z-index: 1;
+    pointer-events: none;
+    transition: var(--transition-normal);
+}
+
+.carousel-slide::before {
+    top: -30px;
+    left: -30px;
+}
+
+.carousel-slide::after {
+    bottom: -30px;
+    right: -30px;
+}
+
+.carousel-slide:hover::before,
+.carousel-slide:hover::after {
+    opacity: 0.3;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-full);
+    background: rgba(30, 30, 35, 0.9);
+    border: 1px solid var(--aptiv-gray-700);
+    color: var(--aptiv-gray-400);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    background: var(--aptiv-primary);
+    border-color: var(--aptiv-primary);
+    color: var(--aptiv-white);
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: var(--space-xs);
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--radius-full);
+    background: var(--aptiv-gray-700);
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.carousel-dot:hover {
+    background: var(--aptiv-gray-500);
+}
+
+.carousel-dot.active {
+    background: var(--aptiv-primary);
+    width: 24px;
+}
+
+.news-carousel-empty {
+    text-align: center;
+    padding: var(--space-xl);
+    color: var(--aptiv-gray-500);
+}
+
+/* News card styles for carousel - Crown Layout (Text Top, Image Bottom) */
+.news-carousel .news-card {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    /* Ensure content is clipped */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background: var(--aptiv-gray-900);
+    z-index: 2;
+    transition: var(--transition-fast);
+}
+
+/* Moving the border to a pseudo-element to ensure it stays on top of the image */
+.news-carousel .news-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* Perfect fit */
+    border: 0.5px solid var(--aptiv-primary);
+    /* Thinner 0.5px outline */
+    border-radius: var(--radius-lg);
+    z-index: 10;
+    pointer-events: none;
+    transition: var(--transition-fast);
+}
+
+.news-carousel .news-card:hover {
+    z-index: 10;
+}
+
+.news-carousel .news-card:hover::after {
+    border-width: 1px;
+    /* Slightly thicker but still delicate on hover */
+    box-shadow: inset 0 0 10px rgba(255, 60, 0, 0.15);
+}
+
+/* 2. The Head (Image Body) */
+.news-carousel .news-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    z-index: 1;
+    background: #000;
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.news-carousel .news-card-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.news-carousel .news-card:hover .news-card-image img {
+    transform: scale(1.05);
+}
+
+/* Consolidated display for active overlays if needed, but keeping the border ::after */
+
+/* 1. The Crown (Text Content) */
+.news-carousel .news-card-content {
+    position: relative;
+    z-index: 2;
+    padding: var(--space-md);
+    background: linear-gradient(180deg, var(--aptiv-gray-900) 0%, var(--aptiv-black) 100%);
+    border-bottom: 0.5px solid var(--aptiv-primary);
+    /* Match thinner border */
+    flex: none;
+    height: auto;
+    width: 100%;
+}
+
+.news-carousel .news-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--aptiv-white);
+    margin: 0 0 6px 0;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.news-carousel .news-card-text {
+    font-size: 0.875rem;
+    color: var(--aptiv-gray-400);
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-carousel .news-card-date {
+    font-size: 0.65rem;
+    color: var(--aptiv-primary);
+    font-family: var(--font-mono);
+}
+
+/* Card without image - fallback gradient background */
+.news-carousel .news-card:not(:has(.news-card-image)) {
+    background: linear-gradient(135deg, var(--aptiv-gray-800) 0%, var(--aptiv-gray-900) 100%);
+}
+
+@media (max-width: 1024px) {
+    .news-carousel {
+        height: auto;
+    }
+
+    .carousel-track {
+        flex-direction: row;
+        height: auto;
+        gap: var(--space-sm);
+    }
+    
+    .carousel-slide {
+        flex: 1 0 calc(50% - var(--space-sm) / 2);
+        height: auto;
+        min-width: 0;
+    }
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .news-carousel .news-card {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .news-carousel .news-card-image {
+        aspect-ratio: 4 / 3;
+        height: auto;
+        min-height: 80px;
+    }
+
+    .news-carousel .news-card-title {
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .news-carousel .news-card-text {
+        font-size: 0.7rem;
+    }
+}
+
+/* ── Light Mode Overrides ── */
+/* Disable the decorative orange orb blurs — they smear dirty colour on white */
+.light-theme .carousel-slide::before,
+.light-theme .carousel-slide::after {
+    display: none;
+}
+
+/* Navigation arrows */
+.light-theme .carousel-btn {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #e2e8f0;
+    color: #475569;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.light-theme .carousel-btn:hover {
+    background: var(--aptiv-primary);
+    border-color: var(--aptiv-primary);
+    color: #ffffff;
+}
+
+/* Pagination dots */
+.light-theme .carousel-dot {
+    background: #cbd5e1;
+}
+
+.light-theme .carousel-dot:hover {
+    background: #94a3b8;
+}
+
+.light-theme .carousel-dot.active {
+    background: var(--aptiv-primary);
+}
+
+/* Card body — was dark navy, becomes white card */
+.light-theme .news-carousel .news-card {
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.07);
+}
+
+/* Card text crown — was a dark gradient, becomes a white → light-grey gradient */
+.light-theme .news-carousel .news-card-content {
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    border-bottom: 0.5px solid #e2e8f0;
+}
+
+/* Card title — was white text */
+.light-theme .news-carousel .news-card-title {
+    color: #1e293b;
+    text-shadow: none;
+}
+
+/* Card body text */
+.light-theme .news-carousel .news-card-text {
+    color: #475569;
+}
+
+/* Card without image fallback */
+.light-theme .news-carousel .news-card:not(:has(.news-card-image)) {
+    background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+}
+
+/* Card image placeholder bg */
+.light-theme .news-carousel .news-card-image {
+    background: #e2e8f0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head><title>capture</title></head>
+<body>
+<script>
+  const { ipcRenderer } = require('electron');
+  let buffer = '';
+  let timeout = null;
+  let activityTimeout = null;
+
+  window.addEventListener('focus', () => {
+    clearTimeout(activityTimeout);
+    activityTimeout = setTimeout(() => {
+      console.log('[CAPTURE] 10s elapsed without scan. Releasing focus.');
+      buffer = '';
+      ipcRenderer.send('release-focus');
+    }, 10000);
+  });
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      clearTimeout(activityTimeout); // Stop the 10s dead-man switch
+      clearTimeout(timeout);
+      if (buffer.length > 0) {
+        console.log('[CAPTURE] Buffer complete:', buffer);
+        ipcRenderer.send('scan-complete', buffer);
+      }
+      buffer = '';
+    } else if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (e.key !== '`' && e.key !== '-') {
+        buffer += e.key.toUpperCase();
+        console.log('[CAPTURE] Buffer:', buffer);
+      }
+      clearTimeout(timeout);
+      timeout = setTimeout(() => { 
+        if (buffer.length > 0) console.log('[CAPTURE] Buffer cleared due to timeout');
+        buffer = ''; 
+      }, 1000);
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Status Overlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            background: transparent;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            -webkit-app-region: no-drag;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        .status-bar {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px 4px 8px;
+            border-radius: 0 0 6px 0;
+            background: rgba(20, 20, 30, 0.85);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: none;
+            border-left: none;
+            backdrop-filter: blur(8px);
+            width: fit-content;
+            min-height: 28px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            box-shadow: 0 0 6px currentColor;
+        }
+
+        .dot.green {
+            background: #22c55e;
+            color: #22c55e;
+        }
+
+        .dot.red {
+            background: #ef4444;
+            color: #ef4444;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                box-shadow: 0 0 6px #ef4444;
+            }
+
+            50% {
+                opacity: 0.6;
+                box-shadow: 0 0 12px #ef4444;
+            }
+        }
+
+        .label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+
+        .label.green {
+            color: #22c55e;
+        }
+
+        .label.red {
+            color: #ef4444;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="status-container" style="display: flex; flex-direction: column; gap: 2px;">
+        <!-- Rows will be injected here -->
+    </div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+        const container = document.getElementById('status-container');
+
+        function createRow(text, status, isSmall = false) {
+            const row = document.createElement('div');
+            row.className = 'status-bar';
+
+            const dot = document.createElement('div');
+            dot.className = 'dot ' + (status === 'red' ? 'red' : 'green');
+
+            const label = document.createElement('span');
+            label.className = 'label ' + (status === 'red' ? 'red' : 'green');
+            if (isSmall) label.style.fontSize = '9px';
+            label.textContent = text;
+
+            row.appendChild(dot);
+            row.appendChild(label);
+            return row;
+        }
+
+        ipcRenderer.on('overlay-update', (_event, data) => {
+            container.innerHTML = '';
+
+            // 1. Show Version Row
+            const versionText = `${data.hostname || 'Local PC'} (v${data.version || '?.?.?'})`;
+            container.appendChild(createRow(versionText, 'green', true));
+
+            // 2. Show App Rows (Dynamic)
+            if (data.apps && data.apps.length > 0) {
+                data.apps.forEach(app => {
+                    container.appendChild(createRow(app.name, app.status));
+                });
+            } else if (!data.apps) {
+                // Fallback for old main.ts versions or default state
+                container.appendChild(createRow('APTIV Agent Running', 'green'));
+            }
+        });
+    </script>
+</body>
+
+</html>

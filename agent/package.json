@@ -1,0 +1,72 @@
+{
+    "name": "versagent",
+    "version": "1.2.3",
+    "description": "APTIV PC Inventory Agent",
+    "author": "ISSAM",
+    "main": "dist/main.js",
+    "scripts": {
+        "dev": "electron .",
+        "start": "electron .",
+        "build": "tsc",
+        "package": "npm run build && electron-builder build --dir",
+        "dist": "npm run build && electron-builder build --windows nsis --x64",
+        "rebuild-native": "electron-rebuild"
+    },
+    "build": {
+        "appId": "com.versagent.sysagent",
+        "productName": "VersAgent",
+        "asar": true,
+        "artifactName": "VersAgent-Setup-v${version}.exe",
+        "directories": {
+            "output": "release-1.2.3/"
+        },
+        "win": {
+            "target": [
+                "nsis"
+            ],
+            "icon": "assets/icon.ico",
+            "requestedExecutionLevel": "asInvoker",
+            "signAndEditExecutable": false
+        },
+        "nsis": {
+            "oneClick": false,
+            "perMachine": true,
+            "allowToChangeInstallationDirectory": false,
+            "createDesktopShortcut": false,
+            "createStartMenuShortcut": false,
+            "runAfterFinish": false,
+            "include": "installer.nsh",
+            "installerIcon": "assets/icon.ico",
+            "uninstallerIcon": "assets/icon.ico",
+            "uninstallDisplayName": "VersAgent",
+            "installerSidebar": null,
+            "license": null
+        },
+        "files": [
+            "dist/**/*",
+            "src/renderer/**/*"
+        ],
+        "extraResources": [
+            {
+                "from": "src/renderer",
+                "to": "renderer"
+            },
+            {
+                "from": "src/resources",
+                "to": "resources"
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^22.0.0",
+        "electron": "^33.0.0",
+        "electron-builder": "^25.0.0",
+        "typescript": "^5.5.0"
+    },
+    "dependencies": {
+        "axios": "^1.7.0",
+        "koffi": "^2.16.1",
+        "mssql": "^12.2.0",
+        "uuid": "^11.0.0"
+    }
+}

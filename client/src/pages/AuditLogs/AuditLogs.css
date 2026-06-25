@@ -1,0 +1,252 @@
+.audit-logs-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    animation: fadeIn var(--transition-normal);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Filters Panel - Modern Expanding Panel */
+.audit-filters-panel {
+    background: var(--gradient-card);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-md);
+    
+    /* Modern Web Guidance: @starting-style */
+    transition: opacity 0.4s ease, transform 0.4s ease, display 0.4s allow-discrete;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@starting-style {
+    .audit-filters-panel {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+.audit-filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+/* Use focused glow from design system on inputs */
+.audit-filters-grid .input:focus {
+    border-color: var(--aptiv-primary);
+    box-shadow: 0 0 0 2px var(--aptiv-primary-glow);
+}
+
+.audit-filters-actions {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: flex-end;
+}
+
+.logs-container {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logs-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.log-entry {
+    display: flex;
+    background: var(--gradient-card);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    
+    /* Modern interactions and entry animations */
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform 0.4s ease, opacity 0.4s ease;
+    box-shadow: var(--shadow-sm);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@starting-style {
+    .log-entry {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+.log-entry:hover {
+    border-color: var(--aptiv-gray-700);
+    box-shadow: var(--shadow-md);
+}
+
+.log-indicator {
+    width: 4px;
+    flex-shrink: 0;
+}
+
+.log-content {
+    flex: 1;
+    padding: var(--space-md) var(--space-lg);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.log-action {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.action-text {
+    color: var(--aptiv-white);
+    font-weight: 600;
+    font-size: 1.05rem;
+}
+
+.resource-text {
+    color: var(--aptiv-gray-500);
+    font-size: 0.95rem;
+}
+
+.log-details {
+    margin-top: var(--space-md);
+    background: var(--aptiv-black);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--aptiv-gray-800);
+    overflow-x: auto;
+    
+    /* Modern Web Guidance: Custom Scrollbars */
+    scrollbar-width: thin;
+    scrollbar-color: var(--aptiv-gray-600) transparent;
+}
+
+.log-details code {
+    color: var(--aptiv-gray-300);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    white-space: pre;
+    line-height: 1.5;
+}
+
+.log-meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-lg);
+    color: var(--aptiv-gray-500);
+    font-size: 0.8rem;
+    border-left: 1px dashed var(--aptiv-gray-800);
+    min-width: 220px;
+    background: rgba(0, 0, 0, 0.02); /* subtle inset feeling */
+}
+
+/* Adjust subtle inset background for light theme via CSS var cascade if we wanted to, but rgba works nicely as a slight darken */
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.loading-state,
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: var(--aptiv-gray-500);
+    gap: var(--space-md);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-xl) 0;
+}
+
+.pagination-info {
+    color: var(--aptiv-gray-400);
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .log-entry {
+        flex-direction: column;
+    }
+
+    .log-meta {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        border-left: none;
+        border-top: 1px dashed var(--aptiv-gray-800);
+        background: transparent;
+    }
+}
+.audit-diff {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    margin-top: var(--space-md);
+    background: var(--aptiv-black);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--aptiv-gray-800);
+}
+
+.diff-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.diff-old .diff-label {
+    color: var(--status-danger);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.diff-new .diff-label {
+    color: var(--status-success);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.diff-section pre {
+    margin: 0;
+    padding: 8px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 4px;
+    color: var(--aptiv-gray-300);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+.diff-old pre {
+    border-left: 2px solid var(--status-danger);
+}
+
+.diff-new pre {
+    border-left: 2px solid var(--status-success);
+}

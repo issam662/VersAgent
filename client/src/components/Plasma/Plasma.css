@@ -1,0 +1,17 @@
+.plasma-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    /* Consider if interactivity is needed, user code had pointer-events: auto for mouse */
+}
+
+/* Ensure canvas fills the container */
+.plasma-container canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

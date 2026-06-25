@@ -1,0 +1,853 @@
+[2026-02-19T04:30:59.263Z] Starting background services...
+[2026-02-19T04:38:20.870Z] Starting background services...
+[2026-02-19T04:45:40.479Z] Starting background services...
+[2026-02-19T04:45:40.483Z] Calling getSystemInfo(true)...
+[2026-02-19T04:47:28.903Z] Starting background services...
+[2026-02-19T04:47:28.907Z] Calling getSystemInfo(true)...
+[2026-02-19T04:49:42.339Z] Starting background services...
+[2026-02-19T04:49:42.343Z] Calling getSystemInfo(true)...
+[2026-02-19T04:53:48.312Z] Starting background services...
+[2026-02-19T04:53:48.323Z] Calling getSystemInfo(true)...
+[2026-02-19T05:08:53.519Z] Starting background services...
+[2026-02-19T05:08:53.525Z] Calling getSystemInfo(true)...
+[2026-02-19T23:51:23.319Z] Starting background services...
+[2026-02-19T23:51:23.327Z] Calling getSystemInfo(true)...
+[2026-02-19T23:51:29.889Z] getSystemInfo returned successfully.
+[2026-02-19T23:51:29.890Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-19T23:51:29.950Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-19T23:51:33.421Z] Starting inventory collection...
+[2026-02-19T23:51:42.397Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-19T23:51:42.422Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-19T23:51:42.423Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T00:00:51.482Z] Starting background services...
+[2026-02-20T00:00:51.491Z] Calling getSystemInfo(true)...
+[2026-02-20T00:00:58.719Z] getSystemInfo returned successfully.
+[2026-02-20T00:00:58.720Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T00:00:58.803Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T00:01:01.710Z] Starting inventory collection...
+[2026-02-20T00:01:11.525Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T00:01:11.560Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T00:01:11.561Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T00:08:55.517Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T00:09:55.499Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T00:11:59.595Z] Starting background services...
+[2026-02-20T00:11:59.600Z] Calling getSystemInfo(true)...
+[2026-02-20T00:12:05.089Z] getSystemInfo returned successfully.
+[2026-02-20T00:12:05.090Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T00:12:05.137Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T00:12:09.679Z] Starting inventory collection...
+[2026-02-20T00:12:18.698Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T00:12:18.724Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T00:12:18.725Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T00:41:59.702Z] Starting inventory collection...
+[2026-02-20T00:42:08.114Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T00:42:08.127Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T00:42:08.128Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T01:05:27.293Z] Starting background services...
+[2026-02-20T01:05:27.297Z] Calling getSystemInfo(true)...
+[2026-02-20T01:05:33.110Z] getSystemInfo returned successfully.
+[2026-02-20T01:05:33.111Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T01:05:33.168Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T01:05:37.380Z] Starting inventory collection...
+[2026-02-20T01:05:47.378Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T01:05:47.404Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T01:05:47.405Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T01:44:57.861Z] Starting background services...
+[2026-02-20T01:44:57.868Z] Calling getSystemInfo(true)...
+[2026-02-20T01:46:05.236Z] Starting background services...
+[2026-02-20T01:46:05.240Z] Calling getSystemInfo(true)...
+[2026-02-20T01:49:41.251Z] Starting background services...
+[2026-02-20T01:49:41.255Z] Calling getSystemInfo(true)...
+[2026-02-20T01:50:03.288Z] Starting background services...
+[2026-02-20T01:50:03.295Z] Calling getSystemInfo(true)...
+[2026-02-20T02:36:27.580Z] Starting background services...
+[2026-02-20T02:36:27.584Z] Calling getSystemInfo(true)...
+[2026-02-20T02:37:18.829Z] Starting background services...
+[2026-02-20T02:37:18.833Z] Calling getSystemInfo(true)...
+[2026-02-20T02:37:24.911Z] getSystemInfo returned successfully.
+[2026-02-20T02:37:24.912Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T02:37:24.970Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T02:37:28.919Z] Starting inventory collection...
+[2026-02-20T02:37:38.377Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T02:37:38.531Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T03:06:55.569Z] Starting background services...
+[2026-02-20T03:06:55.573Z] Calling getSystemInfo(true)...
+[2026-02-20T03:07:01.744Z] getSystemInfo returned successfully.
+[2026-02-20T03:07:01.745Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T03:07:01.799Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T03:07:05.678Z] Starting inventory collection...
+[2026-02-20T03:07:15.856Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T03:07:16.088Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T03:16:03.850Z] Starting background services...
+[2026-02-20T03:16:03.854Z] Calling getSystemInfo(true)...
+[2026-02-20T03:16:09.987Z] getSystemInfo returned successfully.
+[2026-02-20T03:16:09.988Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T03:16:10.037Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T03:16:13.952Z] Starting inventory collection...
+[2026-02-20T03:16:22.925Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T03:16:23.010Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T03:29:39.896Z] Starting background services...
+[2026-02-20T03:29:39.901Z] Calling getSystemInfo(true)...
+[2026-02-20T03:29:46.196Z] getSystemInfo returned successfully.
+[2026-02-20T03:29:46.197Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T03:29:46.251Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T03:29:50.003Z] Starting inventory collection...
+[2026-02-20T03:29:59.201Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T03:30:01.365Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T03:45:19.240Z] Starting background services...
+[2026-02-20T03:45:19.244Z] Calling getSystemInfo(true)...
+[2026-02-20T03:45:25.657Z] getSystemInfo returned successfully.
+[2026-02-20T03:45:25.659Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T03:45:25.718Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T03:45:29.332Z] Starting inventory collection...
+[2026-02-20T03:45:38.313Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T03:45:38.427Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T03:54:58.443Z] Starting background services...
+[2026-02-20T03:54:58.448Z] Calling getSystemInfo(true)...
+[2026-02-20T04:02:51.791Z] Starting background services...
+[2026-02-20T04:02:51.797Z] Calling getSystemInfo(true)...
+[2026-02-20T04:02:58.407Z] getSystemInfo returned successfully.
+[2026-02-20T04:02:58.409Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T04:02:58.463Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T04:03:01.949Z] Starting inventory collection...
+[2026-02-20T04:03:11.776Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T04:03:11.957Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T04:18:55.936Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:19:55.780Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:20:55.796Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:21:55.811Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:22:55.728Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:23:55.819Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:24:55.826Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:25:55.868Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:26:55.867Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:27:55.733Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:28:55.907Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:29:55.896Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:30:55.855Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:31:55.857Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:32:51.976Z] Starting inventory collection...
+[2026-02-20T04:32:55.811Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:33:04.281Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T04:33:07.926Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T04:33:07.928Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T04:33:55.876Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:34:55.871Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:35:55.933Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:36:55.874Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:37:55.746Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:38:55.891Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:39:55.981Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:40:55.920Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:41:55.909Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T04:42:55.762Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T05:02:52.005Z] Starting inventory collection...
+[2026-02-20T05:03:14.189Z] Starting background services...
+[2026-02-20T05:03:14.205Z] Calling getSystemInfo(true)...
+[2026-02-20T05:03:21.358Z] getSystemInfo returned successfully.
+[2026-02-20T05:03:21.360Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T05:03:21.431Z] [AGENT] Registration failed: Request failed with status code 500
+[2026-02-20T05:03:21.433Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T05:03:24.392Z] Starting inventory collection...
+[2026-02-20T05:03:35.337Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T05:03:35.368Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T05:03:35.369Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T05:08:22.913Z] Starting background services...
+[2026-02-20T05:08:22.923Z] Calling getSystemInfo(true)...
+[2026-02-20T05:15:51.822Z] Starting background services...
+[2026-02-20T05:15:51.826Z] Calling getSystemInfo(true)...
+[2026-02-20T05:16:02.604Z] Starting background services...
+[2026-02-20T05:16:02.609Z] Calling getSystemInfo(true)...
+[2026-02-20T05:17:55.444Z] Starting background services...
+[2026-02-20T05:17:55.449Z] Calling getSystemInfo(true)...
+[2026-02-20T05:32:15.906Z] Starting background services...
+[2026-02-20T05:32:15.916Z] Calling getSystemInfo(true)...
+[2026-02-20T05:32:22.718Z] getSystemInfo returned successfully.
+[2026-02-20T05:32:22.719Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T05:32:22.775Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T05:32:26.048Z] Starting inventory collection...
+[2026-02-20T05:32:35.527Z] Sending inventory: 181 apps to http://10.71.12.26:3002/api
+[2026-02-20T05:32:35.683Z] [AGENT] Inventory sent: 181 apps
+[2026-02-20T05:38:37.286Z] Starting background services...
+[2026-02-20T05:38:37.291Z] Calling getSystemInfo(true)...
+[2026-02-20T05:38:43.876Z] getSystemInfo returned successfully.
+[2026-02-20T05:38:43.877Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T05:38:43.931Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T05:38:47.389Z] Starting inventory collection...
+[2026-02-20T05:38:57.377Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T05:38:57.567Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T06:08:37.390Z] Starting inventory collection...
+[2026-02-20T06:08:46.597Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T06:08:46.729Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T06:38:37.407Z] Starting inventory collection...
+[2026-02-20T06:38:46.377Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T06:38:46.528Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T07:08:37.431Z] Starting inventory collection...
+[2026-02-20T07:08:47.362Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T07:08:47.460Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T07:22:42.781Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T07:23:41.722Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T07:38:37.474Z] Starting inventory collection...
+[2026-02-20T07:38:46.438Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T07:38:46.551Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T08:08:37.509Z] Starting inventory collection...
+[2026-02-20T08:08:46.210Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T08:08:46.346Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T08:38:37.526Z] Starting inventory collection...
+[2026-02-20T08:38:46.563Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T08:38:46.656Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T09:08:37.544Z] Starting inventory collection...
+[2026-02-20T09:08:46.366Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T09:08:46.453Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T09:38:37.556Z] Starting inventory collection...
+[2026-02-20T09:38:46.353Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T09:38:46.492Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T10:08:37.613Z] Starting inventory collection...
+[2026-02-20T10:08:46.934Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T10:08:47.036Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T10:38:37.648Z] Starting inventory collection...
+[2026-02-20T10:38:46.742Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T10:38:46.845Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T11:08:37.668Z] Starting inventory collection...
+[2026-02-20T11:08:46.435Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T11:08:46.581Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T11:38:37.685Z] Starting inventory collection...
+[2026-02-20T11:38:47.001Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T11:38:47.153Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T12:08:37.716Z] Starting inventory collection...
+[2026-02-20T12:08:47.415Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T12:08:47.521Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T12:38:37.765Z] Starting inventory collection...
+[2026-02-20T12:38:46.706Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T12:38:46.836Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T13:08:37.787Z] Starting inventory collection...
+[2026-02-20T13:08:46.951Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T13:08:47.044Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T13:38:37.810Z] Starting inventory collection...
+[2026-02-20T13:38:46.883Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T13:38:46.976Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T14:08:37.826Z] Starting inventory collection...
+[2026-02-20T14:08:46.739Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T14:08:46.856Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T14:38:37.870Z] Starting inventory collection...
+[2026-02-20T14:38:46.687Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T14:38:46.774Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T14:42:52.106Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:43:49.553Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:44:46.182Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:45:48.250Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:46:50.122Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:47:48.123Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:48:45.735Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:49:46.230Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:50:46.236Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:51:46.232Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:52:46.244Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:53:45.775Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:54:48.277Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:55:45.963Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:56:46.285Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:57:46.002Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:58:45.817Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T14:59:46.301Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:00:47.927Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:01:48.024Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:02:50.044Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:03:49.903Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:04:46.021Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:05:46.071Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:06:46.003Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:07:47.963Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:08:37.891Z] Starting inventory collection...
+[2026-02-20T15:08:45.897Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:08:47.736Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T15:08:50.444Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T15:08:50.445Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T15:09:46.068Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:10:45.998Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:11:52.041Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:12:48.103Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:13:47.966Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:14:46.111Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:15:46.115Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:16:46.119Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:17:46.095Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:18:45.179Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:19:46.865Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:20:46.138Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:21:46.106Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:22:46.116Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:23:45.217Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:24:46.171Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:25:46.515Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:26:46.206Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:27:50.253Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:28:45.285Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:29:48.225Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:30:46.683Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:31:46.239Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:32:46.275Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:33:45.345Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:34:46.300Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:35:46.291Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:36:46.648Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:37:46.312Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:38:37.918Z] Starting inventory collection...
+[2026-02-20T15:38:46.240Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:38:48.808Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T15:38:51.537Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T15:38:51.539Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T15:39:46.323Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:40:46.348Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:41:46.650Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:42:46.343Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:43:45.433Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:44:46.384Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:45:46.381Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:46:48.425Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:47:46.621Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:48:45.436Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:49:46.913Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:50:46.405Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:51:46.427Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:52:46.866Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:53:45.523Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:54:46.503Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:55:46.493Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:56:46.488Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:57:48.829Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:58:45.567Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T15:59:46.534Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:00:46.514Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:01:46.526Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:02:46.528Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:03:45.617Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:04:46.569Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:05:46.548Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:06:46.577Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:07:46.604Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:08:37.939Z] Starting inventory collection...
+[2026-02-20T16:08:46.438Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:08:46.982Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T16:08:49.703Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T16:08:49.704Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T16:09:46.624Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:10:46.617Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:11:46.630Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:12:46.638Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:13:45.706Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:14:46.900Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:15:46.657Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:16:46.657Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:17:46.663Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:18:46.508Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:19:46.978Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:20:46.693Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:21:46.704Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:22:46.717Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:23:45.797Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:24:47.091Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:25:46.756Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:26:46.754Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:27:46.766Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:28:46.616Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:29:46.872Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:30:47.028Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:31:46.785Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:32:46.800Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:33:45.860Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:34:46.819Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:35:47.144Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:36:46.837Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:37:46.841Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:38:37.965Z] Starting inventory collection...
+[2026-02-20T16:38:46.686Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:38:46.965Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T16:38:49.691Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T16:38:49.693Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T16:39:46.852Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:40:46.898Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:41:46.926Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:42:46.891Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:43:45.949Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:44:46.921Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:45:46.951Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:46:46.963Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:47:46.938Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:48:46.010Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:49:46.978Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:50:47.012Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:51:47.019Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:52:46.983Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:53:46.053Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:54:47.005Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:55:47.041Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:56:47.048Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:57:47.020Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:58:46.097Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T16:59:47.045Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:00:47.067Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:01:47.093Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:02:47.059Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:03:46.127Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:04:47.086Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:05:47.110Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:06:47.112Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:07:47.081Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:08:37.985Z] Starting inventory collection...
+[2026-02-20T17:08:46.143Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:08:47.199Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T17:08:50.690Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T17:08:50.693Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T17:09:47.118Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:10:47.144Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:11:47.167Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:12:47.114Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:13:46.174Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:14:47.160Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:15:47.188Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:16:47.199Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:17:47.173Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:18:46.249Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:19:47.229Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:20:47.222Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:21:47.265Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:22:47.237Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:23:46.291Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:24:47.257Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:25:47.284Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:26:47.302Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:27:47.250Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:28:46.327Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:29:47.287Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:30:47.304Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:31:47.324Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:32:47.306Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:33:46.356Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:34:47.310Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:35:47.358Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:36:51.155Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:37:47.328Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:38:38.006Z] Starting inventory collection...
+[2026-02-20T17:38:47.089Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T17:38:47.196Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:38:50.728Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T17:38:50.729Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T17:39:47.432Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:40:47.404Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:41:47.429Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:42:47.382Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:43:46.456Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:44:47.424Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:45:47.429Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:46:47.454Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:47:47.422Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:48:46.479Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:49:47.470Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:50:47.487Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:51:47.533Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:52:47.481Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:53:46.550Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:54:47.529Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:55:47.534Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:56:47.566Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:57:47.533Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:58:46.597Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T17:59:47.565Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:00:47.590Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:01:47.605Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:02:47.553Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:03:46.654Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:04:47.606Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:05:47.636Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:06:47.654Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:07:47.629Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:08:38.026Z] Starting inventory collection...
+[2026-02-20T18:08:46.678Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:08:47.052Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T18:08:50.572Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T18:08:50.573Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T18:09:47.655Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:10:47.668Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:11:47.692Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:12:47.639Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:13:46.725Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:14:47.695Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:15:47.721Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:16:47.710Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:17:47.690Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:18:46.766Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:19:47.714Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:20:47.758Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:21:47.772Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:22:47.734Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:23:46.801Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:24:47.762Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:25:47.787Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:26:47.799Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:27:47.776Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:28:46.841Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:29:47.797Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:30:47.816Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:31:47.851Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:32:47.816Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:33:46.870Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:34:47.848Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:35:47.857Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:36:47.887Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:37:47.844Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:38:38.035Z] Starting inventory collection...
+[2026-02-20T18:38:47.575Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T18:38:47.850Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:38:51.059Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T18:38:51.059Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T18:39:47.868Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:40:47.906Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:41:47.919Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:42:47.891Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:43:46.962Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:44:47.921Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:45:47.954Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:46:47.956Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:47:47.921Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:48:47.004Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:49:47.961Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:50:47.989Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:51:48.010Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:52:47.971Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:53:47.044Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:54:48.006Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:55:50.064Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:56:48.069Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:57:48.035Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:58:47.095Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T18:59:48.052Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:00:48.082Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:01:48.141Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:02:48.051Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:03:47.133Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:04:48.107Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:05:48.132Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:06:48.177Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:07:48.126Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:08:38.045Z] Starting inventory collection...
+[2026-02-20T19:08:47.180Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:08:47.349Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T19:08:50.824Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T19:08:50.824Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T19:09:48.147Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:10:48.167Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:11:48.190Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:12:48.168Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:13:47.227Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:14:48.222Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:15:48.213Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:16:48.255Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:17:48.228Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:18:47.278Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:19:48.251Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:20:48.272Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:21:48.302Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:22:48.251Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:23:47.322Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:24:48.278Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:25:48.307Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:26:48.334Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:27:48.301Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:28:47.370Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:29:48.345Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:30:48.347Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:31:48.355Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:32:48.354Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:33:47.404Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:34:48.354Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:35:48.418Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:36:48.393Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:37:48.361Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:38:38.050Z] Starting inventory collection...
+[2026-02-20T19:38:47.112Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T19:38:48.376Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:38:50.612Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T19:38:50.613Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T19:39:48.393Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:40:50.330Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:41:48.452Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:42:48.389Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:43:47.470Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:44:48.446Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:45:48.436Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:46:48.521Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:47:48.440Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:48:47.505Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:49:48.481Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:50:48.477Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:51:48.552Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:52:48.506Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:53:47.559Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:54:48.555Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:55:48.509Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:56:48.584Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:57:48.538Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:58:47.596Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T19:59:48.565Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:00:48.661Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:01:48.676Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:02:48.536Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:03:47.628Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:04:48.602Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:05:48.598Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:06:48.653Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:07:48.608Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:08:38.060Z] Starting inventory collection...
+[2026-02-20T20:08:47.275Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T20:08:47.687Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:08:50.005Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T20:08:50.006Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T20:09:48.660Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:10:48.639Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:11:50.536Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:12:48.602Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:13:47.715Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:14:48.669Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:15:50.613Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:16:48.738Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:17:48.687Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:18:47.761Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:19:48.737Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:20:48.725Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:21:48.772Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:22:48.750Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:23:47.792Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:24:48.743Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:25:48.768Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:26:48.815Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:27:48.785Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:28:47.840Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:29:48.794Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:30:48.811Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:31:48.881Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:32:48.836Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:33:47.907Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:34:48.856Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:35:48.892Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:36:48.916Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:37:48.895Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:38:38.079Z] Starting inventory collection...
+[2026-02-20T20:38:47.399Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T20:38:48.909Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:38:50.891Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T20:38:50.892Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T20:39:48.920Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:40:48.924Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:41:48.970Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:42:48.934Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:43:48.004Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:44:48.997Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:45:49.099Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:46:49.018Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:47:48.952Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:48:48.025Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:49:49.000Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:50:49.026Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:51:49.057Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:52:49.050Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:53:48.067Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:54:49.015Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:55:49.027Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:56:49.087Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:57:49.030Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:58:48.091Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T20:59:49.083Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:00:49.145Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:01:49.113Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:02:49.063Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:03:48.137Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:04:49.077Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:05:49.084Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:06:51.202Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:07:49.125Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:08:38.098Z] Starting inventory collection...
+[2026-02-20T21:08:47.696Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T21:08:48.159Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:08:50.413Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T21:08:50.414Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T21:09:49.154Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:10:49.160Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:11:49.174Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:12:49.182Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:13:48.199Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:14:49.160Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:15:49.139Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:16:49.176Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:17:49.233Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:18:48.231Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:19:49.179Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:20:49.172Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:21:49.261Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:22:49.235Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:23:48.274Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:24:49.259Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:25:49.321Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:26:49.314Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:27:49.288Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:28:48.319Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:29:49.274Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:30:49.278Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:31:49.306Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:32:49.306Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:33:48.324Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:34:49.295Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:35:49.289Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:36:49.371Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:37:49.365Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:38:38.116Z] Starting inventory collection...
+[2026-02-20T21:38:47.462Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T21:38:49.335Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:38:50.955Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T21:38:50.956Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T21:39:49.347Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:40:49.342Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:41:49.384Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:42:49.407Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:43:48.422Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:44:49.395Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:45:49.390Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:46:49.429Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:47:49.454Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:48:48.468Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:49:49.412Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:50:49.415Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:51:49.440Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:52:49.465Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:53:48.496Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:54:49.441Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:55:49.466Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:56:49.496Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:57:49.513Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:58:48.540Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T21:59:49.484Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:00:51.438Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:01:49.499Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:02:49.522Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:03:48.571Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:04:49.553Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:05:49.499Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:06:49.557Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:07:49.563Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:08:38.123Z] Starting inventory collection...
+[2026-02-20T22:08:48.592Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:08:49.567Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T22:08:53.201Z] [AGENT] Inventory failed: Request failed with status code 500
+[2026-02-20T22:08:53.203Z] Status: 500, Data: {"error":{"message":"Internal Server Error"}}
+[2026-02-20T22:09:51.447Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:10:50.454Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:11:50.822Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:12:50.537Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:13:48.672Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:14:49.671Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:15:51.900Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:16:49.712Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:17:50.363Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:18:48.716Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:19:49.656Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:20:49.625Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:21:49.678Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:22:51.572Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:23:50.576Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:24:51.541Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:25:51.540Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:26:51.519Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:27:52.137Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:28:48.792Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:29:49.650Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:30:49.652Z] Heartbeat failed: Request failed with status code 500
+[2026-02-20T22:31:50.903Z] Heartbeat failed: read ECONNRESET
+[2026-02-20T22:32:48.137Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:33:48.137Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:34:48.178Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:35:48.184Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:36:48.182Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:37:48.200Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:38:38.136Z] Starting inventory collection...
+[2026-02-20T22:38:48.189Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:38:48.299Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T22:38:50.342Z] [AGENT] Inventory failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:39:48.213Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:40:48.189Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:41:48.212Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:42:48.229Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:43:48.217Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:44:48.233Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:45:48.251Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:46:48.264Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:47:48.278Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:48:48.267Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:49:48.311Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:50:48.310Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:51:48.318Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:52:48.325Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:53:48.359Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:54:48.331Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:55:48.343Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:56:48.342Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:57:48.375Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:58:48.376Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T22:59:48.380Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:00:48.389Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:01:48.399Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:02:48.424Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:03:48.408Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:04:48.433Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:05:48.425Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:06:48.465Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:07:48.458Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:08:38.157Z] Starting inventory collection...
+[2026-02-20T23:08:47.241Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T23:08:48.463Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:08:49.270Z] [AGENT] Inventory failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:09:48.464Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:10:48.473Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:11:48.469Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:12:48.465Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:13:48.471Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:14:48.484Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:15:48.487Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:16:48.516Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:17:48.512Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:18:48.514Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:19:48.533Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:20:48.548Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:21:48.535Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:22:48.553Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:23:48.566Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:24:48.558Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:25:48.570Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:26:48.602Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:38:38.226Z] Starting inventory collection...
+[2026-02-20T23:38:48.796Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T23:38:48.962Z] [AGENT] Inventory sent: 180 apps
+[2026-02-20T23:47:48.847Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:52:48.930Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:53:48.924Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:54:48.948Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:55:48.958Z] Heartbeat failed: connect ECONNREFUSED 10.71.12.26:3002
+[2026-02-20T23:56:39.799Z] Starting background services...
+[2026-02-20T23:56:39.804Z] Calling getSystemInfo(true)...
+[2026-02-20T23:56:46.893Z] getSystemInfo returned successfully.
+[2026-02-20T23:56:46.894Z] Registering agent for host: DLD9VW9Q3, Server: http://10.71.12.26:3002/api
+[2026-02-20T23:56:46.949Z] [AGENT] Registered: machineId=3d62f393-55d2-4b9d-a9a9-456caef92e02, agentId=61217ec2-39ea-4491-9566-f7b6150c8053
+[2026-02-20T23:56:49.894Z] Starting inventory collection...
+[2026-02-20T23:56:59.402Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-20T23:56:59.536Z] [AGENT] Inventory sent: 180 apps
+[2026-02-21T00:26:39.968Z] Starting inventory collection...
+[2026-02-21T00:26:49.062Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-21T00:26:49.187Z] [AGENT] Inventory sent: 180 apps
+[2026-02-21T00:56:40.026Z] Starting inventory collection...
+[2026-02-21T00:56:49.118Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-21T00:56:49.217Z] [AGENT] Inventory sent: 180 apps
+[2026-02-21T01:26:40.065Z] Starting inventory collection...
+[2026-02-21T01:26:50.378Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-21T01:26:50.492Z] [AGENT] Inventory sent: 180 apps
+[2026-02-21T01:56:40.087Z] Starting inventory collection...
+[2026-02-21T01:56:50.068Z] Sending inventory: 180 apps to http://10.71.12.26:3002/api
+[2026-02-21T01:56:50.169Z] [AGENT] Inventory sent: 180 apps

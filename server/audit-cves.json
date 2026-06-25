@@ -1,0 +1,385 @@
+{
+  "mappings": [
+    {
+      "original": "Microsoft Edge",
+      "normalized": "edge",
+      "count": 5
+    },
+    {
+      "original": "Npcap",
+      "normalized": "npcap",
+      "count": 5
+    },
+    {
+      "original": "BeyondTrust Privilege Management Cloud Adapter (x64)",
+      "normalized": "beyondtrust",
+      "count": 4
+    },
+    {
+      "original": "CrowdStrike Device Control",
+      "normalized": "crowdstrike",
+      "count": 4
+    },
+    {
+      "original": "CrowdStrike Firmware Analysis",
+      "normalized": "crowdstrike",
+      "count": 4
+    },
+    {
+      "original": "CrowdStrike Sensor Platform",
+      "normalized": "crowdstrike",
+      "count": 4
+    },
+    {
+      "original": "CrowdStrike Windows Sensor",
+      "normalized": "crowdstrike",
+      "count": 4
+    },
+    {
+      "original": "Local Administrator Password Solution",
+      "normalized": "local",
+      "count": 4
+    },
+    {
+      "original": "Microsoft Edge WebView2 Runtime",
+      "normalized": "edge",
+      "count": 4
+    },
+    {
+      "original": "Microsoft Intune Management Extension",
+      "normalized": "microsoft",
+      "count": 4
+    },
+    {
+      "original": "Microsoft OneDrive",
+      "normalized": "microsoft",
+      "count": 4
+    },
+    {
+      "original": "Microsoft Windows Desktop Runtime - 6.0.36 (x64)",
+      "normalized": "microsoft",
+      "count": 4
+    },
+    {
+      "original": "Microsoft Windows Desktop Runtime - 8.0.24 (x64)",
+      "normalized": "microsoft",
+      "count": 4
+    },
+    {
+      "original": "Privilege Management for Windows (x64) 23.9.225.0",
+      "normalized": "privilege",
+      "count": 4
+    },
+    {
+      "original": "Rapid7 Insight Agent",
+      "normalized": "rapid7",
+      "count": 4
+    },
+    {
+      "original": "Xerox Workplace Cloud Client",
+      "normalized": "xerox",
+      "count": 4
+    },
+    {
+      "original": "APTIV System Service 1.0.88",
+      "normalized": "aptiv",
+      "count": 3
+    },
+    {
+      "original": "Dell SupportAssist",
+      "normalized": "dell",
+      "count": 3
+    },
+    {
+      "original": "Tanium Client 7.8.1.3147",
+      "normalized": "tanium",
+      "count": 3
+    },
+    {
+      "original": "Dell Command | Update for Windows Universal",
+      "normalized": "dell",
+      "count": 2
+    }
+  ],
+  "nvdChecks": {
+    "chrome": [
+      {
+        "product": "chrome",
+        "c": 69
+      }
+    ],
+    "edge": [
+      {
+        "product": "edgeconnect_sd-wan_orchestrator",
+        "c": 20
+      },
+      {
+        "product": "edge_chromium",
+        "c": 5
+      },
+      {
+        "product": "gt_edge_ai",
+        "c": 4
+      },
+      {
+        "product": "big-ip_edge_gateway",
+        "c": 3
+      },
+      {
+        "product": "edge",
+        "c": 1
+      }
+    ],
+    "firefox": [
+      {
+        "product": "firefox",
+        "c": 179
+      }
+    ],
+    "acrobat": [
+      {
+        "product": "acrobat",
+        "c": 12
+      },
+      {
+        "product": "acrobat_reader_dc",
+        "c": 4
+      },
+      {
+        "product": "acrobat_reader",
+        "c": 4
+      },
+      {
+        "product": "acrobat_dc",
+        "c": 4
+      }
+    ],
+    "office": [
+      {
+        "product": "office_online_server",
+        "c": 11
+      },
+      {
+        "product": "group_office",
+        "c": 11
+      },
+      {
+        "product": "group-office",
+        "c": 6
+      },
+      {
+        "product": "office_deployment_tool",
+        "c": 1
+      },
+      {
+        "product": "libreoffice",
+        "c": 1
+      }
+    ],
+    "teams": [],
+    "zoom": [
+      {
+        "product": "zoom",
+        "c": 2
+      }
+    ],
+    "webex": [],
+    "jre": [],
+    "nodejs": [],
+    "python": [
+      {
+        "product": "python",
+        "c": 2
+      },
+      {
+        "product": "sigstore-python",
+        "c": 1
+      },
+      {
+        "product": "python-multipart",
+        "c": 1
+      },
+      {
+        "product": "micropython",
+        "c": 1
+      }
+    ],
+    "7-zip": [],
+    "winrar": [],
+    "vlc": [],
+    "windows_10": [
+      {
+        "product": "windows_10_1809",
+        "c": 228
+      },
+      {
+        "product": "windows_10_22h2",
+        "c": 180
+      },
+      {
+        "product": "windows_10_21h2",
+        "c": 180
+      },
+      {
+        "product": "windows_10_1607",
+        "c": 166
+      },
+      {
+        "product": "windows_10_1507",
+        "c": 4
+      }
+    ]
+  },
+  "weirdMappings": [
+    {
+      "name": "DiagnosticsHub_CollectionService"
+    },
+    {
+      "name": "Labelstar PLUS"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 x64 Additional Runtime - 12.0.40664"
+    },
+    {
+      "name": "Dell Peripheral Core"
+    },
+    {
+      "name": "CrowdStrike Device Control"
+    },
+    {
+      "name": "Intel® Driver & Support Assistant"
+    },
+    {
+      "name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.50.35719"
+    },
+    {
+      "name": "Dynamic Application Loader Host Interface Service"
+    },
+    {
+      "name": "Microsoft .NET Host FX Resolver - 6.0.36 (x64)"
+    },
+    {
+      "name": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.44.35211"
+    },
+    {
+      "name": "GlobalProtect"
+    },
+    {
+      "name": "SQL Server 2022 Shared Management Objects Extensions"
+    },
+    {
+      "name": "Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030"
+    },
+    {
+      "name": "Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.29.30135"
+    },
+    {
+      "name": "CrowdStrike Sensor Platform"
+    },
+    {
+      "name": "Microsoft PFE Remediation for Configuration Manager"
+    },
+    {
+      "name": "Intel(R) ME WMI Provider"
+    },
+    {
+      "name": "Rapid7 InsightVM Scan Assistant v1.4.0.5"
+    },
+    {
+      "name": "Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030"
+    },
+    {
+      "name": "Microsoft Edge WebView2 Runtime"
+    },
+    {
+      "name": "Python 3.11.8 Tcl/Tk Support (64-bit)"
+    },
+    {
+      "name": "BeyondTrust Privilege Management Cloud Adapter (x64)"
+    },
+    {
+      "name": "Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030"
+    },
+    {
+      "name": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.42.34438"
+    },
+    {
+      "name": "vs_FileTracker_Singleton"
+    },
+    {
+      "name": "Intel(R) Graphics Software & Drivers"
+    },
+    {
+      "name": "DefaultPackMSI"
+    },
+    {
+      "name": "vs_CoreEditorFonts"
+    },
+    {
+      "name": "SUNIX Multi-IO Controller"
+    },
+    {
+      "name": "Microsoft SQL Server 2022 RsFx Driver"
+    },
+    {
+      "name": "Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40664"
+    },
+    {
+      "name": "Microsoft 365 Apps for enterprise - en-us"
+    },
+    {
+      "name": "Microsoft Intune Management Extension"
+    },
+    {
+      "name": "vs_minshellsharedmsi"
+    },
+    {
+      "name": "Rapid7 Insight Agent"
+    },
+    {
+      "name": "Google Legacy Browser Support"
+    },
+    {
+      "name": "Dell Core Services"
+    },
+    {
+      "name": "Tanium Client 7.8.1.3147"
+    },
+    {
+      "name": "Python Launcher"
+    },
+    {
+      "name": "Microsoft Edge"
+    },
+    {
+      "name": "vs_githubprotocolhandlermsi"
+    },
+    {
+      "name": "Microsoft .NET Host - 8.0.24 (x64)"
+    },
+    {
+      "name": "Dell SupportAssist"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 8.0.21 (x64)"
+    },
+    {
+      "name": "Npcap"
+    },
+    {
+      "name": "Microsoft .NET Runtime - 6.0.36 (x64)"
+    },
+    {
+      "name": "EPSON SC-T5200 Series Printer Uninstall"
+    },
+    {
+      "name": "Xerox Workplace Cloud Client"
+    },
+    {
+      "name": "OPLUS Tool Driver 3.2.1"
+    },
+    {
+      "name": "Cisco Packet Tracer 8.2.2 64Bit"
+    }
+  ]
+}

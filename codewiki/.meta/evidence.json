@@ -1,0 +1,267 @@
+{
+  "ui-app": {
+    "score": 40,
+    "threshold": 60,
+    "candidate_threshold": 40,
+    "status": "candidate",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "path_glob",
+        "pattern": "**/src/App.*",
+        "weight": 20,
+        "matches": [
+          "client\\src\\App.css",
+          "client\\src\\App.tsx"
+        ]
+      },
+      {
+        "type": "content_regex",
+        "pattern": "reactdom|createapp|createRoot",
+        "weight": 20,
+        "matches": [
+          "client\\README.md",
+          "client\\src\\main.tsx",
+          "client\\src\\pages\\NewsManagement\\NewsManagement.tsx",
+          "client\\src\\pages\\Tasks\\CreateTaskModal.tsx",
+          "client\\src\\pages\\Tasks\\TaskModal.tsx"
+        ]
+      }
+    ]
+  },
+  "api": {
+    "score": 20,
+    "threshold": 60,
+    "candidate_threshold": 40,
+    "status": "excluded",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "path_glob",
+        "pattern": "**/routes/**",
+        "weight": 20,
+        "matches": [
+          "server\\src\\routes"
+        ]
+      }
+    ]
+  },
+  "plugins": {
+    "score": 70,
+    "threshold": 60,
+    "candidate_threshold": 40,
+    "status": "included",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "type": "path_glob",
+        "pattern": "**/plugins/**",
+        "weight": 30,
+        "matches": [
+          "agent\\builder-cache\\nsis\\nsis-3.0.4.1\\plugins",
+          "agent\\builder-cache\\nsis\\nsis-3.0.4.1\\plugins\\x86-ansi",
+          "agent\\builder-cache\\nsis\\nsis-3.0.4.1\\plugins\\x86-unicode",
+          "agent\\builder-cache\\nsis\\nsis-resources-3.4.1\\plugins",
+          "agent\\builder-cache\\nsis\\nsis-resources-3.4.1\\plugins\\x64-ansi",
+          "agent\\builder-cache\\nsis\\nsis-resources-3.4.1\\plugins\\x64-unicode",
+          "agent\\builder-cache\\nsis\\nsis-resources-3.4.1\\plugins\\x86-ansi",
+          "agent\\builder-cache\\nsis\\nsis-resources-3.4.1\\plugins\\x86-unicode"
+        ]
+      },
+      {
+        "type": "path_glob",
+        "pattern": "**/hooks/**",
+        "weight": 20,
+        "matches": [
+          "client\\src\\hooks"
+        ]
+      },
+      {
+        "type": "content_regex",
+        "pattern": "plugin|extension point|hook",
+        "weight": 20,
+        "matches": [
+          "findings_and_solution.md",
+          ".agents\\skills\\vercel-react-best-practices\\AGENTS.md",
+          ".agents\\skills\\vercel-react-best-practices\\SKILL.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\advanced-effect-event-deps.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\advanced-event-handler-refs.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\advanced-use-latest.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\bundle-analyzable-paths.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\client-event-listeners.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\js-cache-function-results.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\js-cache-storage.md"
+        ]
+      }
+    ]
+  },
+  "build-and-release": {
+    "score": 0,
+    "threshold": 50,
+    "candidate_threshold": 30,
+    "status": "excluded",
+    "confidence": "low",
+    "evidence": []
+  },
+  "data": {
+    "score": 0,
+    "threshold": 60,
+    "candidate_threshold": 40,
+    "status": "excluded",
+    "confidence": "low",
+    "evidence": []
+  },
+  "security": {
+    "score": 30,
+    "threshold": 60,
+    "candidate_threshold": 40,
+    "status": "excluded",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "content_regex",
+        "pattern": "jwt|oauth|rbac|authz|openid",
+        "weight": 30,
+        "matches": [
+          "agent\\package-lock.json",
+          "client\\package-lock.json",
+          "server\\package-lock.json",
+          "server\\backups\\auto-backup-2026-06-18T18-00-00-016Z.json",
+          "server\\backups\\auto-backup-2026-06-19T18-00-00-010Z.json",
+          "server\\backups\\auto-backup-2026-06-21T21-57-32-233Z.json",
+          "server\\backups\\auto-backup-2026-06-22T18-00-00-011Z.json",
+          "server\\backups\\auto-backup-2026-06-23T17-59-32-393Z.json",
+          "server\\backups\\auto-backup-2026-06-23T18-00-00-002Z.json",
+          "server\\backups\\auto-backup-2026-06-24T18-00-00-015Z.json"
+        ]
+      }
+    ]
+  },
+  "observability": {
+    "score": 50,
+    "threshold": 60,
+    "candidate_threshold": 40,
+    "status": "candidate",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "content_regex",
+        "pattern": "opentelemetry|otel|tracing|metrics|prometheus",
+        "weight": 30,
+        "matches": [
+          "package-lock.json",
+          ".agents\\skills\\vercel-react-best-practices\\AGENTS.md",
+          ".agents\\skills\\vercel-react-best-practices\\metadata.json",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\bundle-analyzable-paths.md",
+          "agent\\package-lock.json",
+          "agent\\src\\services\\api-client.ts",
+          "server\\package-lock.json",
+          "server\\src\\services\\cveService.ts"
+        ]
+      },
+      {
+        "type": "content_regex",
+        "pattern": "logger|logrus|zap|slog",
+        "weight": 20,
+        "matches": [
+          "package-lock.json",
+          ".agents\\skills\\vercel-react-best-practices\\AGENTS.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\js-cache-function-results.md",
+          "agent\\package-lock.json",
+          "agent\\src\\main.ts",
+          "agent\\src\\services\\api-client.ts",
+          "agent\\src\\services\\db-client.ts",
+          "agent\\src\\services\\system-info.ts",
+          "client\\package-lock.json",
+          "client\\src\\pages\\NewsManagement\\NewsManagement.tsx"
+        ]
+      }
+    ]
+  },
+  "performance": {
+    "score": 25,
+    "threshold": 50,
+    "candidate_threshold": 30,
+    "status": "excluded",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "content_regex",
+        "pattern": "benchmark|profiling|perf|latency",
+        "weight": 25,
+        "matches": [
+          "findings_and_solution.md",
+          ".agents\\skills\\find-skills\\SKILL.md",
+          ".agents\\skills\\frontend-design\\SKILL.md",
+          ".agents\\skills\\vercel-react-best-practices\\AGENTS.md",
+          ".agents\\skills\\vercel-react-best-practices\\metadata.json",
+          ".agents\\skills\\vercel-react-best-practices\\README.md",
+          ".agents\\skills\\vercel-react-best-practices\\SKILL.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\bundle-barrel-imports.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\bundle-preload.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\client-passive-event-listeners.md"
+        ]
+      }
+    ]
+  },
+  "integrations": {
+    "score": 0,
+    "threshold": 50,
+    "candidate_threshold": 30,
+    "status": "excluded",
+    "confidence": "low",
+    "evidence": []
+  },
+  "troubleshooting": {
+    "score": 20,
+    "threshold": 40,
+    "candidate_threshold": 20,
+    "status": "candidate",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "content_regex",
+        "pattern": "error code|panic|exception",
+        "weight": 20,
+        "matches": [
+          "test_cdp_vlan.py",
+          ".agents\\skills\\frontend-design\\SKILL.md",
+          ".agents\\skills\\vercel-react-best-practices\\AGENTS.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\server-dedup-props.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\server-no-shared-module-state.md",
+          "agent\\release-1.1.16\\win-unpacked\\resources\\resources\\scripts\\cdp_sniffer.py",
+          "agent\\release-1.1.17\\win-unpacked\\resources\\resources\\scripts\\cdp_sniffer.py",
+          "agent\\release-1.1.18\\win-unpacked\\resources\\resources\\scripts\\cdp_sniffer.py",
+          "agent\\release-1.1.19\\win-unpacked\\resources\\resources\\scripts\\cdp_sniffer.py",
+          "agent\\release-1.2.0\\win-unpacked\\resources\\resources\\scripts\\cdp_sniffer.py"
+        ]
+      }
+    ]
+  },
+  "glossary": {
+    "score": 15,
+    "threshold": 30,
+    "candidate_threshold": 10,
+    "status": "candidate",
+    "confidence": "low",
+    "evidence": [
+      {
+        "type": "content_regex",
+        "pattern": "domain model|entity|aggregate",
+        "weight": 15,
+        "matches": [
+          "package-lock.json",
+          ".agents\\skills\\vercel-react-best-practices\\AGENTS.md",
+          ".agents\\skills\\vercel-react-best-practices\\rules\\advanced-effect-event-deps.md",
+          "agent\\package-lock.json",
+          "client\\src\\pages\\Printers\\PrinterDetails.tsx",
+          "server\\package-lock.json",
+          "server\\backups\\auto-backup-2026-06-18T18-00-00-016Z.json",
+          "server\\backups\\auto-backup-2026-06-19T18-00-00-010Z.json",
+          "server\\backups\\auto-backup-2026-06-21T21-57-32-233Z.json",
+          "server\\backups\\auto-backup-2026-06-22T18-00-00-011Z.json"
+        ]
+      }
+    ]
+  }
+}

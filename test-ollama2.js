@@ -1,0 +1,1 @@
+fetch('http://127.0.0.1:11434/api/chat', { method: 'POST', body: JSON.stringify({ model: 'hermes3', stream: false, messages: [{ role: 'user', content: 'How many users have logged in today?' }] }) }).then(r => r.json()).then(d => console.log('OLLAMA:', d.message.content)).catch(console.error);

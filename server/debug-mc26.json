@@ -1,0 +1,1035 @@
+{
+  "os_name": "Windows 10 Enterprise LTSC 2019",
+  "os_version": "10.0.17763",
+  "total_rules_for_windows_10": 758,
+  "matchCount": 588,
+  "sampleHits": [
+    {
+      "cve_id": "CVE-2026-20865",
+      "version_start": null,
+      "version_end": null
+    },
+    {
+      "cve_id": "CVE-2026-20823",
+      "version_start": null,
+      "version_end": null
+    },
+    {
+      "cve_id": "CVE-2026-21246",
+      "version_start": null,
+      "version_end": null
+    },
+    {
+      "cve_id": "CVE-2025-64679",
+      "version_start": null,
+      "version_end": null
+    },
+    {
+      "cve_id": "CVE-2026-20860",
+      "version_start": null,
+      "version_end": null
+    }
+  ],
+  "current_db_vulns": [
+    {
+      "id": "00c2768f-e191-4b8b-8f3e-6053596dbd8a",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20809",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.063Z"
+    },
+    {
+      "id": "010667ef-c79d-471a-96ab-6ed49655d939",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20877",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.880Z"
+    },
+    {
+      "id": "0191ccd8-76a0-4b69-8d13-5ce25efca4d6",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20936",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.910Z"
+    },
+    {
+      "id": "0236f840-c4d0-41ee-b290-45efdff2dba2",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21519",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.810Z"
+    },
+    {
+      "id": "03f2067c-3428-438c-93d4-af29dfe6e45e",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20931",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.743Z"
+    },
+    {
+      "id": "043cd835-f9eb-4157-8209-ccc1e69fc4eb",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20846",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.970Z"
+    },
+    {
+      "id": "05dacec1-7ded-44b1-84ea-ebd032dd70e2",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62472",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.050Z"
+    },
+    {
+      "id": "05dfc04b-3a65-4f61-a875-2ce92d71f485",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21238",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.936Z"
+    },
+    {
+      "id": "08da36e8-cd45-476a-997f-59d02683cc69",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20857",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.070Z"
+    },
+    {
+      "id": "122d8870-68c4-4795-b605-9758b3011b7c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20804",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.996Z"
+    },
+    {
+      "id": "13578757-1d10-48e0-9ad9-d2c433460afd",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20868",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.013Z"
+    },
+    {
+      "id": "13f90f02-1dd9-4a8c-85e3-ee5220337da1",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64658",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.970Z"
+    },
+    {
+      "id": "1918eaab-b470-46e8-8c8d-741a08b1c763",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20873",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.000Z"
+    },
+    {
+      "id": "19e5cbae-12e9-4340-873e-30775c0b4916",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21236",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.723Z"
+    },
+    {
+      "id": "1a79b585-8ba5-4e05-b35e-cf6e67c1492b",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-55233",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.720Z"
+    },
+    {
+      "id": "1ac29275-577f-4d8b-98d9-119763f20c7d",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20847",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.666Z"
+    },
+    {
+      "id": "1b495f8d-422b-47b4-a12e-0b4aaddf288c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20852",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.653Z"
+    },
+    {
+      "id": "1e0c6200-02b1-4c44-855f-8b316b1641ca",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62455",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.740Z"
+    },
+    {
+      "id": "1eae021d-e7c3-4e27-912a-dcb1971266e3",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-54100",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.060Z"
+    },
+    {
+      "id": "1ee01bca-fd12-4838-b86b-d9083470f639",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62221",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.910Z"
+    },
+    {
+      "id": "1f568513-d179-4d5a-a4ac-b9d5d61e5cfc",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62464",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.783Z"
+    },
+    {
+      "id": "2640de03-60e8-41fa-9b3a-78523cf5b4a2",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20827",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.976Z"
+    },
+    {
+      "id": "2671d00a-dd3d-486a-8efd-364ed754ead9",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21246",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.636Z"
+    },
+    {
+      "id": "270e0caf-a001-47e6-a0c5-980c46230804",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20834",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.866Z"
+    },
+    {
+      "id": "29c3878c-1fb4-4dac-8a2f-006bfe820ef1",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62462",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.713Z"
+    },
+    {
+      "id": "2d4f3623-703a-47c2-b61b-0ac8aba09760",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20932",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.893Z"
+    },
+    {
+      "id": "30fe5eaf-ca62-45e4-b8c1-163078c4bfa5",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20816",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.716Z"
+    },
+    {
+      "id": "32976211-7e65-4b34-bd89-354342134c7b",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-59517",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.860Z"
+    },
+    {
+      "id": "329bc381-0af2-4af9-b8eb-25430fdbf2e7",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20927",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.816Z"
+    },
+    {
+      "id": "332b9a90-139f-4301-bc56-cbd2bae4a52a",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20867",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.916Z"
+    },
+    {
+      "id": "35046c79-0bba-447c-9a59-92f8ab184591",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20826",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.903Z"
+    },
+    {
+      "id": "3558c59d-b501-4205-b7c9-5fb37caf19df",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20861",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.953Z"
+    },
+    {
+      "id": "37e32fbe-8caa-49e0-b1ff-64a4741b1b45",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64679",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.640Z"
+    },
+    {
+      "id": "38cba283-8763-42b4-854a-d6cfa3450c8f",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20810",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.730Z"
+    },
+    {
+      "id": "3dbe1695-73d3-4df9-b7a2-69a276049187",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62466",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.730Z"
+    },
+    {
+      "id": "43d6ed08-493d-4f05-80ad-21bfb2110d40",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20825",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.963Z"
+    },
+    {
+      "id": "46e411e5-65d0-460a-8762-de2bd2da6269",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21235",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.873Z"
+    },
+    {
+      "id": "495df1ff-bd56-4692-be68-4d720694dbc4",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62473",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.900Z"
+    },
+    {
+      "id": "499b97ae-f509-4732-99eb-50db9b5f4d1a",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20844",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.003Z"
+    },
+    {
+      "id": "4e86b5f1-b355-4a72-b434-0e35146753da",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20814",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.670Z"
+    },
+    {
+      "id": "521430dd-832f-45d5-aa3a-e2719af459b0",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21240",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.883Z"
+    },
+    {
+      "id": "526d680e-37b7-4908-bf82-85cce548bd22",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20922",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.750Z"
+    },
+    {
+      "id": "54fa2f85-93b2-433a-9b03-ade55ddaeb7d",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62573",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.950Z"
+    },
+    {
+      "id": "5698cbf8-ad07-456d-9de7-ae69b816e710",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21510",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.683Z"
+    },
+    {
+      "id": "5afa2f1d-66bd-4b11-97c1-1429e022fd09",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20926",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.820Z"
+    },
+    {
+      "id": "5b58aa5a-fca7-4b71-84c0-75e5b6604485",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62463",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.020Z"
+    },
+    {
+      "id": "5d4a152c-a5ae-4cfc-bcde-63e7672df31a",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20858",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.863Z"
+    },
+    {
+      "id": "5f106616-237e-4c0f-9b88-59b01fe6cbc0",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21239",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.923Z"
+    },
+    {
+      "id": "6026cccb-3342-4dc4-bbae-6c024a7f2b83",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21513",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.703Z"
+    },
+    {
+      "id": "608eb66b-7a38-4789-869e-649c26971e27",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21237",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.020Z"
+    },
+    {
+      "id": "635251e7-b3bf-4271-91fb-dc4721324814",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20921",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.810Z"
+    },
+    {
+      "id": "63955314-9892-4776-af0b-b65f4335f5f3",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20856",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.930Z"
+    },
+    {
+      "id": "673834e3-deff-4432-a0b3-99de3986904d",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62458",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.030Z"
+    },
+    {
+      "id": "6826671a-2c58-4441-a915-cf20b338c9d5",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20812",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.793Z"
+    },
+    {
+      "id": "68e1dc80-b34c-499e-9e19-3a1445aa02e9",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62474",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.040Z"
+    },
+    {
+      "id": "6bb3ee7a-1bc4-4bae-9c5d-5ea44dcd8b37",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20821",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.760Z"
+    },
+    {
+      "id": "6e01fba2-df79-4aa1-b4f9-e1004f732c07",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20871",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.980Z"
+    },
+    {
+      "id": "6f49d918-5664-4165-8f8d-751f5adb24ec",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-59516",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.033Z"
+    },
+    {
+      "id": "7045e10e-84ec-49ab-a2cb-a16e6e9c5b2c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20820",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.650Z"
+    },
+    {
+      "id": "7062293b-228a-4ee1-b205-da26d9679366",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20866",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.700Z"
+    },
+    {
+      "id": "725b47fc-9aac-40b4-b840-6b679fe0e494",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20860",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.646Z"
+    },
+    {
+      "id": "7410dd3d-f750-472e-a3a5-1bda68115392",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20939",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.776Z"
+    },
+    {
+      "id": "754272a8-6477-4e67-9563-80239e3200d7",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21525",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.800Z"
+    },
+    {
+      "id": "77308516-1fb2-4300-a585-961ea4e971cc",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20805",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.870Z"
+    },
+    {
+      "id": "7923958e-9c58-4d30-ba9e-435b01965b56",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64661",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.056Z"
+    },
+    {
+      "id": "7b106709-6645-431a-bc50-cf580e1da188",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20872",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.850Z"
+    },
+    {
+      "id": "7bfa84d9-b6d5-40fc-acac-4e96e7014490",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20865",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.630Z"
+    },
+    {
+      "id": "7c00f1f8-5e3e-4769-8787-a574a13ed7e6",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20924",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.773Z"
+    },
+    {
+      "id": "8093913a-a84f-4317-8456-8bc2108405bb",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20831",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.680Z"
+    },
+    {
+      "id": "87120877-ca8d-4f16-89bc-0d1e1133e536",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20828",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.660Z"
+    },
+    {
+      "id": "87a75a5c-7ba2-4cf2-b09a-e104548fcddb",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20823",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.633Z"
+    },
+    {
+      "id": "88627563-4fab-4c4b-9872-928c479ea907",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21253",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.823Z"
+    },
+    {
+      "id": "8a956870-8486-4a1c-897c-4cce83aa54be",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20864",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.736Z"
+    },
+    {
+      "id": "8b64fc92-5b1f-42aa-b836-54e3e43ef932",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20842",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.833Z"
+    },
+    {
+      "id": "8f1cb362-613b-45ef-9a61-96706bfdb1c2",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21242",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.706Z"
+    },
+    {
+      "id": "8f927889-a7d1-4770-aca4-be49e9e4000c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62457",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.946Z"
+    },
+    {
+      "id": "8fd2bef3-0b05-4633-8977-b849296ca5db",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20937",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.656Z"
+    },
+    {
+      "id": "93fb4c7b-97b5-4415-9737-0900028e1a60",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21244",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.803Z"
+    },
+    {
+      "id": "944fe629-29ba-4b03-84f4-d8d35c4ac8b1",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20836",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.796Z"
+    },
+    {
+      "id": "995fcd7c-3617-48ae-a245-639da1fd010f",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64680",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.753Z"
+    },
+    {
+      "id": "9bb71f27-49b1-4696-a8e9-da9e36ea8713",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20962",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.696Z"
+    },
+    {
+      "id": "9ecc1627-e3c3-4cfa-ac9d-b4e5b71cd107",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62470",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.070Z"
+    },
+    {
+      "id": "9f1461a7-c742-4556-98e9-8b90965cb2c8",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21249",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.926Z"
+    },
+    {
+      "id": "9f37b5e6-ae66-4b5b-8326-546efd29ee75",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62571",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.076Z"
+    },
+    {
+      "id": "a25d2570-bbd2-43bd-a0f2-e97012e20a47",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20849",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.790Z"
+    },
+    {
+      "id": "a487b008-8f3d-4936-a613-1e244b166cf1",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20925",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.890Z"
+    },
+    {
+      "id": "a4af503d-3522-4ddc-bda9-69f3481ce550",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20919",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.830Z"
+    },
+    {
+      "id": "a5966798-cc60-4617-a87c-12ae8e2c962c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62565",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.990Z"
+    },
+    {
+      "id": "a631f219-d7e1-4e68-b143-12108b9ac1ab",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21533",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.756Z"
+    },
+    {
+      "id": "ae84c69b-fb83-41fd-808b-9a5cafbcc944",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62567",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.053Z"
+    },
+    {
+      "id": "af20fd06-cb24-4a97-b479-3794dc95c3a9",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21248",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.663Z"
+    },
+    {
+      "id": "b2c58bd8-ae44-4894-9a64-5a5bf0f1cd45",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20840",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.846Z"
+    },
+    {
+      "id": "b83ea9be-ba2b-4357-82f0-b592b48f5f0e",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20874",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.770Z"
+    },
+    {
+      "id": "bb30eca8-b307-415d-af66-bf70b994af01",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20824",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.686Z"
+    },
+    {
+      "id": "bbfa6672-9cd2-4da0-bc62-8fa966ddb975",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20837",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.960Z"
+    },
+    {
+      "id": "bd4e89e3-f4cf-4297-b709-9c250e73d42c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20875",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.940Z"
+    },
+    {
+      "id": "c0a054ba-66ec-4406-8f4a-5cab5276897a",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64670",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.046Z"
+    },
+    {
+      "id": "c42add1c-27e7-4d74-bfc3-83062df566da",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20848",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.763Z"
+    },
+    {
+      "id": "c86405b6-8999-4fef-b7e4-635fa1d180a9",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20869",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.980Z"
+    },
+    {
+      "id": "c8d2ff63-54c3-4e00-a56a-dff7a41c03b6",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20853",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.956Z"
+    },
+    {
+      "id": "cb647726-f01a-494d-8b03-651ffe1fcdd5",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21265",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.780Z"
+    },
+    {
+      "id": "cb725fd3-2712-4207-8d11-94bc50af5dea",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62454",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.693Z"
+    },
+    {
+      "id": "ce0fa9b4-1d22-49ec-bb3c-0a5b2f270058",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64673",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.026Z"
+    },
+    {
+      "id": "d3f8ec88-3620-4628-aba5-84ed95d48ab0",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21255",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.933Z"
+    },
+    {
+      "id": "d65e422e-c509-4b6c-8a72-e57d36a5cef0",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20839",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.036Z"
+    },
+    {
+      "id": "d76d809e-7706-400d-a894-e931ef2e32aa",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62549",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.690Z"
+    },
+    {
+      "id": "da18ddb4-83ea-4ff8-86e0-afa0bccac5d7",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20822",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.886Z"
+    },
+    {
+      "id": "dd3d1698-9d31-4e07-8cc6-d52dc681c495",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20934",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.006Z"
+    },
+    {
+      "id": "de849542-b5aa-40ab-9423-3fe5fb18e750",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20817",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.010Z"
+    },
+    {
+      "id": "e14a5d20-b49c-408a-ae47-d5313cfc0023",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62461",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:43.043Z"
+    },
+    {
+      "id": "e580c137-9ddc-46a2-b943-b4109ef73ac7",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20832",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.786Z"
+    },
+    {
+      "id": "e592d5dd-df26-46c9-a26e-91c3b446cccd",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21222",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.896Z"
+    },
+    {
+      "id": "e67ff244-36e7-4a61-8e9a-4356386d9081",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20843",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.920Z"
+    },
+    {
+      "id": "e69edcfa-0996-40e0-ba72-c1dd5077c287",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-64678",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.986Z"
+    },
+    {
+      "id": "edec69de-72c3-4f19-953b-72ff857cbe2c",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20923",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.830Z"
+    },
+    {
+      "id": "efb7764f-c104-46c5-a3f5-fd7ea01ce3e1",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21247",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.746Z"
+    },
+    {
+      "id": "f5e7d603-bae0-4e6e-9584-b9b628fbf340",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20829",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.943Z"
+    },
+    {
+      "id": "f64badd0-e63c-4afb-9421-da6e15895876",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21234",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.673Z"
+    },
+    {
+      "id": "f9c3b0a6-911e-465e-beb0-8ec3a905ed7b",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20918",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.990Z"
+    },
+    {
+      "id": "fb542224-af09-4035-bfd4-7288c7e82c3d",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20940",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.826Z"
+    },
+    {
+      "id": "fe072900-4901-4358-a960-77cc2fdb2760",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21508",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.840Z"
+    },
+    {
+      "id": "fe372a3d-00bf-4774-be79-e844b04d7690",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-21231",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.853Z"
+    },
+    {
+      "id": "fe4389ec-b01f-4d95-9989-a1dfa7191043",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20929",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.840Z"
+    },
+    {
+      "id": "fe89e514-a410-44f4-9c0a-097ab1453367",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2025-62467",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.856Z"
+    },
+    {
+      "id": "ffa93e29-6d8b-4c71-80be-f9b5f4efb731",
+      "machine_id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "cve_id": "CVE-2026-20862",
+      "app_name": "Windows 10 Enterprise LTSC 2019",
+      "app_version": "10.0.17763",
+      "detected_at": "2026-03-06T09:47:42.766Z"
+    }
+  ]
+}

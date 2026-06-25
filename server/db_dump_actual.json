@@ -1,0 +1,50 @@
+{
+  "machines": [
+    {
+      "id": "65bd765a-3393-45c4-8cec-cb4a3bd32216",
+      "hostname": "DL39QT994",
+      "serial_number": "39QT994",
+      "agent_id": "72848e17-8937-4613-9d71-f4ed2fd00af2",
+      "is_managed": true,
+      "created_at": "2026-03-07T11:26:58.436Z",
+      "last_seen": "2026-03-08T20:02:45.896Z"
+    },
+    {
+      "id": "80bf277f-d561-4656-8f19-6052d8b28239",
+      "hostname": "DL39QT994",
+      "serial_number": "39QT994",
+      "agent_id": "112e42b9-fe23-4bb1-9374-8d53ba9dcab1",
+      "is_managed": true,
+      "created_at": "2026-03-07T11:26:58.436Z",
+      "last_seen": "2026-03-07T11:26:58.426Z"
+    }
+  ],
+  "nics_65bd765a-3393-45c4-8cec-cb4a3bd32216": [
+    {
+      "id": "940145e8-df68-45ce-b0f3-cb01ec00637b",
+      "mac_address": "AC-B4-80-38-C9-32",
+      "ip_address": "192.168.215.1",
+      "mapping_source": "Agent"
+    },
+    {
+      "id": "d82bfc53-94cd-4f56-8462-9ed7e7082243",
+      "mac_address": "00-E0-4C-36-1A-F0",
+      "ip_address": "10.71.22.20",
+      "mapping_source": "Agent"
+    }
+  ],
+  "nics_80bf277f-d561-4656-8f19-6052d8b28239": [
+    {
+      "id": "41a6bb4e-27ae-4b3a-a3b4-7b7c056bc329",
+      "mac_address": "AC-B4-80-38-C9-32",
+      "ip_address": "192.168.215.1",
+      "mapping_source": "Agent"
+    },
+    {
+      "id": "eaef3e20-b39f-421d-8f2e-4177cd4d0921",
+      "mac_address": "00-E0-4C-36-1A-F0",
+      "ip_address": "10.71.22.20",
+      "mapping_source": "Agent"
+    }
+  ]
+}

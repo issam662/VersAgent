@@ -1,0 +1,224 @@
+.incidents-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.incidents-toolbar {
+    display: flex;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.filters-panel {
+    display: flex;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    background: var(--aptiv-gray-900);
+    border-radius: var(--radius-md);
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+    min-width: 150px;
+}
+
+/* Incidents List */
+.incidents-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--space-md);
+}
+
+.incident-card {
+    background: linear-gradient(145deg, var(--aptiv-gray-900) 0%, rgba(22, 34, 53, 0.8) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg);
+    transition: all 220ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.incident-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 220ms ease;
+}
+
+.incident-card:hover {
+    border-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.incident-card:hover::before {
+    opacity: 0.6;
+}
+
+.incident-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-sm);
+}
+
+.incident-badges {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.incident-number {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    background: var(--aptiv-gray-800);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--aptiv-gray-300);
+}
+
+.incident-actions {
+    display: flex;
+    gap: var(--space-xs);
+    opacity: 0;
+    transition: var(--transition-fast);
+}
+
+.incident-card:hover .incident-actions {
+    opacity: 1;
+}
+
+.incident-title {
+    margin: 0 0 var(--space-sm);
+    font-size: 1rem;
+    color: var(--aptiv-white);
+}
+
+.incident-description {
+    margin: 0 0 var(--space-md);
+    color: var(--aptiv-gray-400);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.incident-meta {
+    display: flex;
+    gap: var(--space-md);
+    color: var(--aptiv-gray-500);
+    font-size: 0.75rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+/* Loading & Empty States */
+.loading-state,
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    color: var(--aptiv-gray-500);
+    gap: var(--space-md);
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: var(--space-lg);
+}
+
+.modal {
+    background: var(--aptiv-dark);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-lg);
+    border-bottom: 1px solid var(--aptiv-gray-800);
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: var(--aptiv-white);
+}
+
+.modal-body {
+    padding: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-sm);
+    padding: var(--space-lg);
+    border-top: 1px solid var(--aptiv-gray-800);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+}
+
+.pagination-info {
+    color: var(--aptiv-gray-400);
+    font-size: 0.875rem;
+}

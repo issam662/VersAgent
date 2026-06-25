@@ -1,0 +1,34 @@
+{
+  "windowsProducts": [
+    {
+      "product": "windows_admin_center",
+      "c": 1
+    }
+  ],
+  "machines": [
+    {
+      "id": "0611e0d1-b616-4856-b7a1-34eebe44dbd1",
+      "hostname": "APT-OT-JB9PC64",
+      "os_name": "Windows 11 Enterprise 25H2",
+      "os_version": "25H2"
+    },
+    {
+      "id": "3d62f393-55d2-4b9d-a9a9-456caef92e02",
+      "hostname": "DLD9VW9Q3",
+      "os_name": "Windows 11 Enterprise 25H2",
+      "os_version": "25H2"
+    },
+    {
+      "id": "d60a799e-dd6b-49a8-a748-673469b5a730",
+      "hostname": "APT-OT-5R6BQT3",
+      "os_name": "Windows 11 Enterprise 25H2",
+      "os_version": "25H2"
+    },
+    {
+      "id": "d6851b31-4fb0-42cb-b707-b81f78f42ac0",
+      "hostname": "MC26",
+      "os_name": "Windows 10 Enterprise LTSC 2019",
+      "os_version": "10.0.17763"
+    }
+  ]
+}

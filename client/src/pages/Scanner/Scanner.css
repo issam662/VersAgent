@@ -1,0 +1,193 @@
+/* Scanner.css */
+.scanner-page {
+    animation: fadeIn 0.4s ease-out;
+}
+
+.scanner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-xl);
+}
+
+.scanner-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-xl);
+    padding: var(--space-xl);
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.scanner-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--aptiv-primary-glow), transparent);
+    opacity: 0.3;
+}
+
+.scanner-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-md);
+    border-bottom: 1px solid var(--aptiv-gray-800);
+}
+
+.scanner-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--aptiv-white);
+    margin: 0;
+}
+
+.scanner-input-group {
+    display: flex;
+    gap: var(--space-md);
+    align-items: flex-end;
+}
+
+.scanner-input-wrapper {
+    flex: 1;
+}
+
+.scanner-label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--aptiv-gray-400);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.scanner-glass-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--aptiv-gray-800);
+    color: var(--aptiv-white);
+    padding: 10px 16px;
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.scanner-glass-input:focus {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--aptiv-primary);
+    box-shadow: 0 0 0 2px var(--aptiv-primary-glow);
+    outline: none;
+}
+
+/* Radar Pulse Animation */
+.radar-btn-icon {
+    animation: radarPulse 2s infinite linear;
+}
+
+@keyframes radarPulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.scanner-progress-container {
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--aptiv-gray-800);
+}
+
+.scanner-progress-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--aptiv-gray-300);
+    margin-bottom: var(--space-sm);
+}
+
+.scanner-progress-bar {
+    width: 100%;
+    height: 8px;
+    background: var(--aptiv-gray-800);
+    border-radius: 9999px;
+    overflow: hidden;
+    margin: var(--space-xs) 0;
+}
+
+.scanner-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--aptiv-primary), #ff9100);
+    transition: width 0.3s ease;
+    border-radius: 9999px;
+    box-shadow: 0 0 10px var(--aptiv-primary-glow);
+}
+
+.scanner-table-wrapper {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.scanner-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.scanner-table th {
+    background: rgba(255, 107, 0, 0.05);
+    padding: var(--space-md) var(--space-lg);
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--aptiv-gray-400);
+    border-bottom: 1px solid var(--aptiv-gray-800);
+}
+
+.scanner-table td {
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--aptiv-gray-800);
+    background: transparent;
+    transition: background 0.2s ease;
+}
+
+.scanner-table tr:hover td {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.scanner-table tr.unregistered td {
+    background: rgba(239, 68, 68, 0.05);
+}
+
+.scanner-table tr.unregistered:hover td {
+    background: rgba(239, 68, 68, 0.08);
+}
+
+.scanner-table tr:last-child td {
+    border-bottom: none;
+}
+
+.scanner-port-badge {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--aptiv-gray-200);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

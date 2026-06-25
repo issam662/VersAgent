@@ -1,0 +1,567 @@
+/* ── Page Layout ── */
+.compliance-rules-page {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-xl);
+}
+
+/* ── Summary Stats Bar ── */
+.compliance-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.summary-card {
+    background: var(--gradient-card);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-lg);
+    padding: var(--space-md) var(--space-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.summary-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at top right, rgba(212, 122, 38, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.summary-card:hover {
+    border-color: var(--aptiv-gray-700);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.summary-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+}
+
+.summary-icon.total   { background: rgba(212, 122, 38, 0.15); color: var(--aptiv-primary); }
+.summary-icon.active  { background: rgba(0, 200, 83, 0.12);   color: var(--status-success); }
+.summary-icon.violations { background: rgba(255, 61, 0, 0.12); color: var(--status-danger); }
+.summary-icon.inactive { background: rgba(126, 149, 183, 0.12); color: var(--aptiv-gray-500); }
+
+.summary-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--aptiv-white);
+}
+
+.summary-label {
+    font-size: 0.75rem;
+    color: var(--aptiv-gray-500);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 2px;
+}
+
+/* ── Filter Bar ── */
+.compliance-filter-bar {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+}
+
+.filter-chip {
+    padding: 6px 14px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--aptiv-gray-800);
+    background: var(--aptiv-gray-900);
+    color: var(--aptiv-gray-400);
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    white-space: nowrap;
+}
+
+.filter-chip:hover {
+    border-color: var(--aptiv-gray-600);
+    color: var(--aptiv-gray-300);
+}
+
+.filter-chip.active {
+    background: var(--aptiv-primary);
+    border-color: var(--aptiv-primary);
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(212, 122, 38, 0.35);
+}
+
+/* ── Rules Container ── */
+.rules-container {
+    min-height: 300px;
+}
+
+.rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+/* ── Rule Card ── */
+.rule-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-normal);
+}
+
+.rule-card-wrapper:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.rule-card {
+    display: flex;
+    background: var(--gradient-card);
+    border: 1px solid var(--aptiv-gray-800);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition-fast);
+    position: relative;
+}
+
+/* When violations panel is expanded, square off the bottom corners */
+.rule-card-wrapper.expanded .rule-card {
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-bottom-color: transparent;
+}
+
+.rule-card:hover {
+    border-color: var(--aptiv-gray-700);
+}
+
+.rule-card.inactive {
+    opacity: 0.55;
+}
+
+/* Severity accent bar */
+.rule-indicator {
+    width: 4px;
+    flex-shrink: 0;
+    transition: width var(--transition-fast);
+}
+
+.rule-card:hover .rule-indicator {
+    width: 6px;
+}
+
+/* ── Rule Body ── */
+.rule-content {
+    flex: 1;
+    padding: var(--space-md) var(--space-lg);
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.rule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+}
+
+.rule-title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    min-width: 0;
+}
+
+.rule-type-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 0.85rem;
+}
+
+.rule-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--aptiv-white);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rule-badges {
+    display: flex;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.rule-description {
+    margin: 0;
+    color: var(--aptiv-gray-400);
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+/* ── Condition Code Block ── */
+.rule-condition {
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--aptiv-gray-800);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.rule-condition-prefix {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--aptiv-gray-600);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.rule-condition code {
+    color: var(--aptiv-primary-light);
+    font-family: var(--font-mono);
+    font-size: 0.825rem;
+    font-weight: 500;
+}
+
+/* ── Actions Column ── */
+.rule-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding: var(--space-md);
+    border-left: 1px solid var(--aptiv-gray-800);
+    min-width: 60px;
+    flex-shrink: 0;
+}
+
+.rule-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    border: none;
+    background: transparent;
+    color: var(--aptiv-gray-500);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.rule-action-btn:hover {
+    background: var(--aptiv-gray-800);
+    color: var(--aptiv-gray-300);
+}
+
+.rule-action-btn.danger:hover {
+    background: rgba(255, 61, 0, 0.15);
+    color: var(--status-danger);
+}
+
+.rule-action-btn.view:hover,
+.rule-action-btn.view.active {
+    background: rgba(212, 122, 38, 0.12);
+    color: var(--aptiv-primary);
+}
+
+/* Toggle */
+.toggle-btn {
+    background: none;
+    border: none;
+    color: var(--aptiv-gray-600);
+    cursor: pointer;
+    padding: 4px;
+    border-radius: var(--radius-sm);
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn:hover {
+    color: var(--aptiv-gray-300);
+    background: var(--aptiv-gray-800);
+}
+
+.toggle-btn.active {
+    color: var(--status-success);
+}
+
+/* ── Violations Panel ── */
+.violations-panel {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--aptiv-gray-800);
+    border-top: none;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    overflow: hidden;
+    animation: slideDown 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.violations-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) var(--space-md);
+    border-bottom: 1px solid var(--aptiv-gray-800);
+    background: rgba(255, 61, 0, 0.04);
+}
+
+.violations-panel-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--status-danger);
+}
+
+.violations-count-badge {
+    background: rgba(255, 61, 0, 0.15);
+    color: var(--status-danger);
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: var(--radius-full);
+}
+
+.violations-loading,
+.violations-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-xl);
+    color: var(--aptiv-gray-500);
+    font-size: 0.875rem;
+    gap: var(--space-sm);
+}
+
+/* ── Violations Table ── */
+.violations-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+
+.violations-table th {
+    text-align: left;
+    padding: var(--space-sm) var(--space-md);
+    color: var(--aptiv-gray-500);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid var(--aptiv-gray-800);
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.violations-table td {
+    padding: var(--space-sm) var(--space-md);
+    color: var(--aptiv-gray-300);
+    border-bottom: 1px solid rgba(42, 59, 89, 0.5);
+}
+
+.violations-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.violation-row {
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.violation-row:hover {
+    background: var(--aptiv-gray-800);
+}
+
+.violation-row:hover .violation-hostname {
+    color: var(--aptiv-primary);
+}
+
+.violation-hostname {
+    font-weight: 600;
+    color: var(--aptiv-white);
+    transition: var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.violation-hostname::after {
+    content: '→';
+    opacity: 0;
+    font-size: 0.75rem;
+    color: var(--aptiv-primary);
+    transition: var(--transition-fast);
+}
+
+.violation-row:hover .violation-hostname::after {
+    opacity: 1;
+}
+
+.violation-details {
+    color: var(--aptiv-gray-500);
+    font-size: 0.8rem;
+    max-width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ── Violation Badges ── */
+.violation-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    animation: pulse-danger 2.5s ease-in-out infinite;
+}
+
+.compliant-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+@keyframes pulse-danger {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0.65; }
+}
+
+/* ── Form Styles ── */
+.form-hint {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--aptiv-gray-500);
+    font-size: 0.75rem;
+    margin-top: var(--space-xs);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    cursor: pointer;
+    color: var(--aptiv-gray-300);
+    font-size: 0.9rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--aptiv-primary);
+    cursor: pointer;
+}
+
+/* ── Empty & Loading States ── */
+.loading-state,
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 320px;
+    color: var(--aptiv-gray-500);
+    gap: var(--space-md);
+}
+
+.empty-state p {
+    font-size: 1rem;
+    color: var(--aptiv-gray-400);
+}
+
+/* ── Violations Toggle Button ── */
+.violations-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* ── Severity Badge Overrides ── */
+.badge-critical-sev {
+    background: rgba(255, 61, 0, 0.15);
+    color: var(--status-danger);
+    border: 1px solid rgba(255, 61, 0, 0.25);
+}
+
+.badge-high-sev {
+    background: rgba(212, 122, 38, 0.15);
+    color: var(--aptiv-primary-light);
+    border: 1px solid rgba(212, 122, 38, 0.25);
+}
+
+.badge-medium-sev {
+    background: rgba(255, 171, 0, 0.12);
+    color: var(--status-warning);
+    border: 1px solid rgba(255, 171, 0, 0.2);
+}
+
+.badge-low-sev {
+    background: rgba(0, 176, 255, 0.1);
+    color: var(--status-info);
+    border: 1px solid rgba(0, 176, 255, 0.2);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .compliance-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .compliance-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .rule-actions {
+        flex-direction: row;
+        border-left: none;
+        border-top: 1px solid var(--aptiv-gray-800);
+        padding: var(--space-sm) var(--space-md);
+    }
+}

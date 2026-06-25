@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
+    <title>VersAgent</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // v1.1.5 DIAGNOSTIC: If this fires, HTML is loading correctly
+        window.addEventListener('DOMContentLoaded', function() {
+            console.log('[DIAG] DOMContentLoaded fired at ' + new Date().toISOString());
+        });
+        window.addEventListener('error', function(e) {
+            document.body.style.background = '#ff0000';
+            document.body.innerHTML = '<h1 style="color:white;padding:20px;">LOAD ERROR: ' + e.message + '<br>File: ' + e.filename + '</h1>';
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Custom title bar -->
+    <div class="titlebar" id="titlebar">
+        <div class="titlebar-left">
+            <div class="titlebar-dot"></div>
+            <span class="titlebar-title">VersAgent</span>
+            <span class="titlebar-version" id="agent-version">v1.0.0</span>
+        </div>
+        <div class="titlebar-controls">
+            <button class="titlebar-btn minimize" id="btn-minimize" title="Minimize">─</button>
+            <button class="titlebar-btn close" id="btn-close" title="Close">✕</button>
+        </div>
+    </div>
+
+    <!-- Full screen auth overlay -->
+    <div id="auth-overlay" class="auth-overlay">
+        <div class="auth-box">
+            <h2>Authentication Required</h2>
+            <div class="auth-input-group">
+                <input type="password" id="auth-password" placeholder="Enter password..." />
+                <button id="auth-submit">Login</button>
+            </div>
+            <div id="auth-error" class="auth-error"
+                style="display:none; color: #ef4444; margin-top: 10px; font-size: 13px;">Incorrect password</div>
+        </div>
+    </div>
+
+    <!-- v1.1.7: Full screen Kiosk Lock overlay -->
+    <!-- RED LOCK SCREEN OVERLAY -->
+    <div id="lock-screen" class="lock-screen" style="display:none;">
+        <div class="lock-box">
+            <h1 class="lock-title">🛑 THIS PC IS BLOCKED</h1>
+            <h2 id="lock-reason" class="lock-subtitle">This PC is blocked. Please contact the IT department on 0532675111.</h2>
+            <div class="lock-input-group">
+                <input type="password" id="lock-password" placeholder="IT Unlock Password..." autocomplete="off" />
+                <button id="btn-unlock">Unlock</button>
+            </div>
+            <div id="lock-error" class="lock-error" style="display:none;">Incorrect password.</div>
+        </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs" style="display:none;">
+        <button class="tab active" data-tab="system">System</button>
+        <button class="tab" data-tab="network">Network</button>
+        <button class="tab" data-tab="apps">Applications</button>
+        <button class="tab" data-tab="scanner">Scanner</button>
+        <button class="tab" data-tab="info">Info Page</button>
+        <button class="tab" data-tab="settings">Settings</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="content" style="display:none;">
+        <!-- System Tab -->
+        <div class="tab-content active" id="tab-system">
+            <div class="loading" id="system-loading">
+                <div class="spinner"></div>
+                <span>Collecting system information...</span>
+            </div>
+            <div class="info-grid" id="system-info" style="display:none;"></div>
+
+            <!-- v1.1.6: PC Details (two-way metadata sync) -->
+            <div id="metadata-section" class="metadata-section" style="display:none;">
+                <div class="metadata-header">
+                    <span class="metadata-title">PC Details</span>
+                    <button id="btn-edit-meta" class="btn-meta">Edit</button>
+                    <button id="btn-save-meta" class="btn-meta btn-save" style="display:none;">Save</button>
+                    <button id="btn-cancel-meta" class="btn-meta btn-cancel" style="display:none;">Cancel</button>
+                </div>
+                <div class="metadata-grid">
+                    <div class="meta-field">
+                        <label>Category</label>
+                        <span id="meta-category-display" class="meta-value">—</span>
+                        <select id="meta-category-input" class="meta-input" style="display:none;">
+                            <option>Unassigned</option><option>User</option><option>Shopfloor</option>
+                            <option>Kiosk</option><option>Server</option><option>Network</option><option>Other</option>
+                        </select>
+                    </div>
+                    <div class="meta-field">
+                        <label>Department</label>
+                        <span id="meta-department-display" class="meta-value">—</span>
+                        <input id="meta-department-input" class="meta-input" style="display:none;" placeholder="Department" />
+                    </div>
+                    <div class="meta-field">
+                        <label>Location</label>
+                        <span id="meta-location-display" class="meta-value">—</span>
+                        <input id="meta-location-input" class="meta-input" style="display:none;" placeholder="Location" />
+                    </div>
+                    <div class="meta-field">
+                        <label>Family</label>
+                        <span id="meta-family-display" class="meta-value">—</span>
+                        <input id="meta-family-input" class="meta-input" style="display:none;" placeholder="Family" />
+                    </div>
+                </div>
+                <div id="meta-status" class="meta-status"></div>
+            </div>
+        </div>
+
+        <!-- Network Tab -->
+        <div class="tab-content" id="tab-network">
+            <div class="network-controls">
+                <select id="network-select" class="network-select">
+                    <option value="">Auto-Detect Adapter</option>
+                    <option disabled>Loading adapters...</option>
+                </select>
+                <button id="btn-rescan" class="btn-rescan">Rescan Network</button>
+            </div>
+
+            <div id="scan-status-container" class="scan-status-container" style="display:none;">
+                <div id="scan-timer" class="scan-timer-large">0s</div>
+                <div id="scan-message" class="scan-message">Scanning Network...</div>
+            </div>
+
+            <div class="info-grid" id="network-info"></div>
+        </div>
+
+        <!-- Applications Tab -->
+        <div class="tab-content" id="tab-apps">
+            <div class="search-bar">
+                <input type="text" id="app-search" placeholder="Search applications..." />
+                <span class="app-count" id="app-count">0 apps</span>
+            </div>
+            <div class="loading" id="apps-loading">
+                <div class="spinner"></div>
+                <span>Scanning installed applications...</span>
+            </div>
+            <div class="app-list" id="app-list" style="display:none;"></div>
+        </div>
+
+        <!-- Scanner Tab -->
+        <div class="tab-content" id="tab-scanner">
+            <div class="settings-panel">
+                <div class="settings-section">
+                    <div class="settings-title" style="display:flex; justify-content:space-between; align-items:center;">
+                        <span>Add Scanner Rule</span>
+                        <span id="scanner-status" style="display:none; font-size:11px; padding:2px 8px; border-radius:99px;"></span>
+                    </div>
+                    <div class="settings-hint">Map barcode scan codes to application actions. Scan the backtick ( ` ) barcode to prime, then scan a command barcode.</div>
+                    
+                    <div class="scanner-form">
+                        <input type="text" id="scanText" placeholder="Scan Code (e.g. START_APP)" class="scanner-input" />
+                        <select id="scanAction" class="scanner-select">
+                            <option value="focus">Focus</option>
+                            <option value="start">Start</option>
+                            <option value="restart">Restart</option>
+                        </select>
+                        <input type="text" id="scanPath" placeholder="App Path (C:\App.exe or app-name)" class="scanner-input" />
+                        <button id="addRule" class="scanner-btn">+ Add Rule</button>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <div class="settings-title">Active Rules</div>
+                    <table class="info-table">
+                        <thead>
+                            <tr>
+                                <th>Scan Code</th>
+                                <th>Application / Target</th>
+                                <th>Action</th>
+                                <th style="width:60px; text-align:center;">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="rulesTable">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Page Tab -->
+        <div class="tab-content" id="tab-info">
+            <div class="loading" id="info-loading">
+                <div class="spinner"></div>
+                <span>Loading info page...</span>
+            </div>
+            <div class="info-page-content" id="info-page-content" style="display:none;"></div>
+        </div>
+
+        <!-- Settings Tab -->
+        <div class="tab-content" id="tab-settings">
+            <div class="settings-panel">
+                <div class="settings-section">
+                    <div class="settings-title">Status Overlay</div>
+                    <div class="settings-row">
+                        <span class="settings-label">Show status on screen</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-status" />
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-hint">Displays a small always-on-top indicator in the top-left corner of the
+                        screen.</div>
+                </div>
+
+                <div class="settings-section">
+                    <div class="settings-title">Optimization</div>
+                    <div class="settings-row">
+                        <span class="settings-label">Keep PC Awake</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="toggle-awake" />
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="settings-hint">Prevents the computer from entering sleep mode. This setting persists
+                        after
+                        restart.</div>
+                </div>
+
+                <div class="settings-section">
+                    <div class="settings-title">Required Applications</div>
+                    <div class="settings-hint" style="margin-bottom:10px;">Select applications that must be installed.
+                        The status indicator will turn red if any selected app is missing.</div>
+                    <div class="settings-checkbox-group">
+                        <label class="settings-checkbox">
+                            <input type="checkbox" id="chk-tanium" />
+                            <span class="checkbox-mark"></span>
+                            <span>Tanium</span>
+                        </label>
+                        <label class="settings-checkbox">
+                            <input type="checkbox" id="chk-crowdstrike" />
+                            <span class="checkbox-mark"></span>
+                            <span>CrowdStrike</span>
+                        </label>
+                        <label class="settings-checkbox">
+                            <input type="checkbox" id="chk-mcafee" />
+                            <span class="checkbox-mark"></span>
+                            <span>McAfee</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span class="footer-hint">Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>O</kbd> to toggle this window</span>
+        <span class="developer-credit">Developed By Issam Hamzaoui</span>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>
